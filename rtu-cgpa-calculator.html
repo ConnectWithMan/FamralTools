@@ -1,0 +1,673 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RTU CGPA Calculator — Famral Tools</title>
+  <meta name="description"
+    content="Use the RTU CGPA Calculator to compute your cumulative grade point average quickly with credit and grade input." />
+  <meta name="keywords"
+    content="RTU CGPA Calculator, RTU CGPA, cumulative GPA calculator, grade points calculator, rtu grade calculator, cgpa calculator" />
+  <meta name="author" content="Famral">
+  <meta property="og:title" content="RTU CGPA Calculator — Famral Tools">
+  <meta property="og:description" content="Calculate your RTU CGPA by entering subject credits and grades. Fast, accurate, and browser-based." />
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tools.famral.com/rtu-cgpa-calculator">
+  <meta property="og:image" content="https://tools.famral.com/tools.png">
+  <meta property="og:image:alt" content="RTU CGPA Calculator preview image">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="RTU CGPA Calculator — Famral Tools">
+  <meta name="twitter:description"
+    content="Calculate your RTU CGPA with an easy cumulative grade calculator. Free and secure in your browser." />
+  <meta name="twitter:image" content="https://tools.famral.com/tools.png">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://tools.famral.com/rtu-cgpa-calculator">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#2563eb">
+  <link rel="icon" type="image/png" href="https://www.famral.com/favicon.png">
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7876432493491415"
+    crossorigin="anonymous"></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-22NPRLMEYS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-22NPRLMEYS');
+  </script>
+
+
+  <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "RTU CGPA Calculator",
+        "url": "https://tools.famral.com/rtu-cgpa-calculator",
+        "description": "Calculate your RTU CGPA by entering subject credits and grades. Free, fast, and works in any browser.",
+        "applicationCategory": "EducationApplication",
+        "operatingSystem": "Any",
+        "author": {
+            "@type": "Organization",
+            "name": "Famral",
+            "url": "https://www.famral.com"
+        }
+    }
+    </script>
+  <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://tools.famral.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Education Tools",
+                    "item": "https://tools.famral.com/education"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "RTU CGPA Calculator",
+                    "item": "https://tools.famral.com/rtu-cgpa-calculator"
+                }
+            ]
+        }
+        </script>
+  <style>
+    /* Accessibility helper (visually hidden but available to screen readers) */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    :root {
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --secondary: #475569;
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --text: #1e293b;
+      --border: #cbd5e1;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: var(--surface);
+      padding: 1rem 2rem;
+      border-bottom: 2px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .brand {
+      font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--primary);
+      text-decoration: none;
+      letter-spacing: -0.5px;
+    }
+
+    nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: var(--secondary);
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 6px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .hamburger span {
+      width: 30px;
+      height: 3px;
+      background-color: var(--text);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .hamburger.active span:nth-child(1) {
+      transform: translateY(9px) rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+      transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .btn {
+      background: var(--primary);
+      color: white;
+      padding: 0.875rem 2rem;
+      border-radius: 0;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.2s;
+      display: inline-block;
+      border: 2px solid transparent;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .btn:hover {
+      background-color: var(--surface);
+      color: var(--primary);
+      border-color: var(--primary);
+      box-shadow: 4px 4px 0 var(--primary-hover);
+      transform: translate(-2px, -2px);
+    }
+
+    .btn-secondary {
+      background: var(--surface);
+      color: var(--text);
+      border: 2px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--secondary);
+      box-shadow: 4px 4px 0 var(--secondary);
+      color: var(--text);
+    }
+
+    main {
+      flex: 1;
+      padding: 2rem 1rem;
+    }
+
+    .tool-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .tool-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .tool-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--text);
+    }
+
+    .tool-header p {
+      color: var(--secondary);
+      font-size: 1.1rem;
+    }
+
+    .tool-box {
+      background: var(--surface);
+      border: 2px solid var(--border);
+      padding: 2rem;
+    }
+
+    .input-group {
+      margin-bottom: 1.5rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    textarea {
+      width: 100%;
+      height: 200px;
+      padding: 1rem;
+      border: 2px solid var(--border);
+      background: var(--bg);
+      color: var(--text);
+      font-family: monospace;
+      resize: vertical;
+      box-sizing: border-box;
+      font-size: 1rem;
+    }
+
+    textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+
+    .controls {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 0.2rem;
+      color: var(--secondary);
+      border-top: 2px solid var(--border);
+      background: var(--surface);
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 1rem;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--surface);
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 2px solid var(--border);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      }
+
+      nav.active {
+        display: flex;
+        animation: slideDown 0.2s ease-out forwards;
+      }
+
+      nav a {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+        border-top: 1px solid var(--border);
+      }
+
+      nav a:hover {
+        background-color: var(--bg);
+      }
+    }
+
+    .tool-content {
+      margin-top: 4rem;
+      border-top: 2px solid var(--border);
+      padding-top: 2rem;
+    }
+
+    .related-tools {
+      margin-top: 2rem;
+      padding: 2rem;
+      background: var(--bg);
+      border: 2px solid var(--border);
+      border-radius: 4px;
+    }
+
+    .related-tools h3 {
+      margin-top: 0;
+      font-size: 1.3rem;
+      color: var(--text);
+      margin-bottom: 1.5rem;
+    }
+
+    .tool-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .tool-card {
+      background: var(--surface);
+      border: 2px solid var(--border);
+      padding: 1.5rem;
+      text-decoration: none;
+      color: var(--text);
+      transition: all 0.2s;
+      border-radius: 4px;
+    }
+
+    .tool-card:hover {
+      border-color: var(--primary);
+      box-shadow: 0 4px 8px rgba(37, 99, 235, 0.1);
+      transform: translateY(-2px);
+    }
+
+    .tool-card h4 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.1rem;
+      color: var(--primary);
+    }
+
+    .tool-card p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--secondary);
+    }
+
+    @media (max-width: 768px) {
+      .tool-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .tool-content h2 {
+      font-size: 1.8rem;
+      color: var(--text);
+      margin-bottom: 1rem;
+    }
+
+    .tool-content h3 {
+      font-size: 1.4rem;
+      color: var(--text);
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .tool-content p {
+      color: var(--secondary);
+      margin-bottom: 1rem;
+    }
+
+    .tool-content ul,
+    .tool-content ol {
+      padding-left: 1.5rem;
+      color: var(--secondary);
+    }
+
+    .tool-content li {
+      margin-bottom: 0.5rem;
+    }
+
+    code {
+      background: var(--bg);
+      padding: 0.2rem 0.4rem;
+      border: 1px solid var(--border);
+      font-family: monospace;
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="/" class="brand">Famral Tools</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="nav-menu">
+      <a href="/">Home</a>
+      <a href="/developer">Developer Tools</a>
+      <a href="/image">Image Tools</a>
+      <a href="/pdf">PDF Tools</a>
+    </nav>
+  </header>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7876432493491415"
+    crossorigin="anonymous"></script>
+  <!-- FmrlToolsAllPgTopResnsv -->
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7876432493491415" data-ad-slot="7246941950"
+    data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+  <main>
+    <div class="tool-container">
+      <noscript>
+        <div
+          style="border:2px solid var(--border); background: #fff3cd; color:#856404; padding:1rem; margin-bottom:1rem;">
+          This tool requires JavaScript to run. Please enable JavaScript in your browser.
+        </div>
+      </noscript>
+
+      <div class="tool-header">
+        <h1>RTU CGPA Calculator</h1>
+        <p>Calculate your RTU CGPA quickly by entering your cumulative subject credits and grades.</p>
+      </div>
+
+      <div class="tool-box">
+        <div class="input-group">
+          <label>All Subjects</label>
+          <table style="width:100%; border-collapse:collapse">
+            <thead>
+              <tr>
+                <th style="text-align:left; padding:8px; border-bottom:1px solid var(--border)">Subject</th>
+                <th style="width:110px; text-align:left; padding:8px; border-bottom:1px solid var(--border)">Credits</th>
+                <th style="width:160px; text-align:left; padding:8px; border-bottom:1px solid var(--border)">Grade</th>
+                <th style="width:110px; text-align:left; padding:8px; border-bottom:1px solid var(--border)">Points</th>
+                <th style="width:90px; text-align:center; padding:8px; border-bottom:1px solid var(--border)">Remove</th>
+              </tr>
+            </thead>
+            <tbody id="cgpa-rows"></tbody>
+          </table>
+        </div>
+
+        <div class="controls">
+          <button id="add-subject" class="btn">Add Subject</button>
+          <button id="remove-last" class="btn-secondary">Remove Last</button>
+          <button id="calc-cgpa" class="btn">Calculate CGPA</button>
+          <button id="reset-cgpa" class="btn-secondary">Reset</button>
+        </div>
+
+        <div class="input-group">
+          <label>Result</label>
+          <div style="padding:12px; border:2px solid var(--border); background:var(--bg);">
+            <div style="font-weight:700">CGPA: <span id="cgpa-value">—</span></div>
+            <div class="small">Total Credits: <span id="cgpa-credits">0</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tool-content">
+        <h2>How it works</h2>
+        <p>CGPA is calculated as the sum of (grade points × subject credits) divided by total credits.</p>
+        <h3>RTU Grade Point System</h3>
+        <table style="width:100%; border-collapse:collapse; margin-top:1rem;">
+          <thead>
+            <tr>
+              <th style="text-align:left; padding:8px; border-bottom:1px solid var(--border)">Grade</th>
+              <th style="text-align:left; padding:8px; border-bottom:1px solid var(--border)">Grade Point</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td style="padding:8px; border-bottom:1px solid var(--border)">A++</td><td style="padding:8px; border-bottom:1px solid var(--border)">10.0</td></tr>
+            <tr><td style="padding:8px; border-bottom:1px solid var(--border)">A+</td><td style="padding:8px; border-bottom:1px solid var(--border)">9.0</td></tr>
+            <tr><td style="padding:8px; border-bottom:1px solid var(--border)">A</td><td style="padding:8px; border-bottom:1px solid var(--border)">8.5</td></tr>
+            <tr><td style="padding:8px; border-bottom:1px solid var(--border)">B+</td><td style="padding:8px; border-bottom:1px solid var(--border)">8.0</td></tr>
+            <tr><td style="padding:8px; border-bottom:1px solid var(--border)">B</td><td style="padding:8px; border-bottom:1px solid var(--border)">7.5</td></tr>
+            <tr><td style="padding:8px; border-bottom:1px solid var(--border)">C+</td><td style="padding:8px; border-bottom:1px solid var(--border)">7.0</td></tr>
+            <tr><td style="padding:8px; border-bottom:1px solid var(--border)">C</td><td style="padding:8px; border-bottom:1px solid var(--border)">6.5</td></tr>
+            <tr><td style="padding:8px; border-bottom:1px solid var(--border)">D+</td><td style="padding:8px; border-bottom:1px solid var(--border)">6.0</td></tr>
+            <tr><td style="padding:8px; border-bottom:1px solid var(--border)">D</td><td style="padding:8px; border-bottom:1px solid var(--border)">5.5</td></tr>
+            <tr><td style="padding:8px; border-bottom:1px solid var(--border)">E+</td><td style="padding:8px; border-bottom:1px solid var(--border)">5.0</td></tr>
+            <tr><td style="padding:8px; border-bottom:1px solid var(--border)">E</td><td style="padding:8px; border-bottom:1px solid var(--border)">4.0</td></tr>
+            <tr><td style="padding:8px;">F</td><td style="padding:8px;">0.0</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; Famral. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Mobile Menu Logic (preserve existing behavior)
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    if (hamburger && navMenu) {
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+      });
+    }
+
+    // CGPA Calculator Logic
+    (function(){
+      const rows = document.getElementById('cgpa-rows');
+      const addBtn = document.getElementById('add-subject');
+      const removeLastBtn = document.getElementById('remove-last');
+      const calcBtn = document.getElementById('calc-cgpa');
+      const resetBtn = document.getElementById('reset-cgpa');
+      const cgpaValue = document.getElementById('cgpa-value');
+      const creditsEl = document.getElementById('cgpa-credits');
+
+      const gradeOpts = [{k:'A++ (10.0)',v:10.0},{k:'A+ (9.0)',v:9.0},{k:'A (8.5)',v:8.5},{k:'B+ (8.0)',v:8.0},{k:'B (7.5)',v:7.5},{k:'C+ (7.0)',v:7.0},{k:'C (6.5)',v:6.5},{k:'D+ (6.0)',v:6.0},{k:'D (5.5)',v:5.5},{k:'E+ (5.0)',v:5.0},{k:'E (4.0)',v:4.0},{k:'F (0.0)',v:0.0}];
+
+      function createRow(){
+        const tr = document.createElement('tr');
+
+        const tdName = document.createElement('td');
+        tdName.style.padding = '8px';
+        const name = document.createElement('input'); name.type='text'; name.placeholder='Subject name'; name.style.width='100%';
+        tdName.appendChild(name);
+
+        const tdCredits = document.createElement('td'); tdCredits.style.padding='8px';
+        const credits = document.createElement('input'); credits.type='number'; credits.min='0'; credits.step='0.5'; credits.value='3'; credits.style.width='100%';
+        tdCredits.appendChild(credits);
+
+        const tdGrade = document.createElement('td'); tdGrade.style.padding='8px';
+        const sel = document.createElement('select'); sel.style.width='100%';
+        gradeOpts.forEach(o=>{const opt=document.createElement('option'); opt.value=o.v; opt.textContent=o.k; sel.appendChild(opt)});
+        tdGrade.appendChild(sel);
+
+        const tdPoints = document.createElement('td'); tdPoints.style.padding='8px';
+        const pts = document.createElement('input'); pts.type='number'; pts.step='0.1'; pts.min='0'; pts.value=sel.value; pts.style.width='100%';
+        tdPoints.appendChild(pts);
+
+        sel.addEventListener('change', ()=>{ pts.value = sel.value; });
+
+        const tdRemove = document.createElement('td'); tdRemove.style.padding='8px'; tdRemove.style.textAlign='center';
+        const rbtn = document.createElement('button'); rbtn.type='button'; rbtn.className='btn-secondary'; rbtn.textContent='Remove';
+        rbtn.addEventListener('click', ()=>{ tr.remove(); });
+        tdRemove.appendChild(rbtn);
+
+        tr.appendChild(tdName); tr.appendChild(tdCredits); tr.appendChild(tdGrade); tr.appendChild(tdPoints); tr.appendChild(tdRemove);
+        rows.appendChild(tr);
+        return {credits,pts};
+      }
+
+      function calculate(){
+        const trList = Array.from(rows.querySelectorAll('tr'));
+        let totalCredits = 0, weighted = 0;
+        trList.forEach(tr=>{
+          const c = parseFloat(tr.cells[1].querySelector('input').value) || 0;
+          const p = parseFloat(tr.cells[3].querySelector('input').value);
+          if (!isFinite(p)) return;
+          totalCredits += c;
+          weighted += (p * c);
+        });
+        creditsEl.textContent = totalCredits ? totalCredits.toFixed(2).replace(/\.00$/,'') : '0';
+        cgpaValue.textContent = totalCredits ? (weighted/totalCredits).toFixed(2) : '—';
+      }
+
+      addBtn.addEventListener('click', ()=> createRow());
+      removeLastBtn.addEventListener('click', ()=>{ const last = rows.lastElementChild; if(last) last.remove(); });
+      calcBtn.addEventListener('click', calculate);
+      resetBtn.addEventListener('click', ()=>{ rows.innerHTML=''; for(let i=0;i<6;i++) createRow(); cgpaValue.textContent='—'; creditsEl.textContent='0'; });
+
+      // initial rows
+      for(let i=0;i<6;i++) createRow();
+    })();
+  </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>
