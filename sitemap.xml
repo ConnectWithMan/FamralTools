@@ -1,622 +1,623 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-
-
-<url>
-  <loc>https://tools.famral.com/</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/developer</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/image</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/pdf</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/json-formatter</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/json-minifier</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/image-to-base64</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/base64-to-image</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/css-minifier</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/css-beautifier</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/html-beautifier</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/html-minifier</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/url-decoder</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/url-encoder</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/sql-formatter</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/sql-minifier</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/yaml-to-json</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/json-to-yaml</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/xml-formatter</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/xml-minifier</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/json-to-xml</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/xml-to-json</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/javascript-beautifier</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/javascript-minifier</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/css-to-scss</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/scss-to-css</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/html-to-markdown</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/markdown-to-html</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/css-gradient-generator</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/html-viewer</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/xml-viewer</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/json-viewer</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/markdown-viewer</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/js-viewer</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/compress-image</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/photo-editor</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/image-converter</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/crop-image</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/rotate-image</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/flip-image</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/blur-image</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/watermark-image</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/pixelate-image</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/jpg-to-png</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/jpg-to-webp</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/jpg-to-gif</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/jpg-to-svg</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/jpg-to-heic</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/jpg-to-tiff</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/jpg-to-bmp</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/jpg-to-psd</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/png-to-jpg</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/png-to-webp</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/png-to-gif</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/png-to-svg</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/png-to-heic</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/png-to-tiff</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/png-to-bmp</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/png-to-psd</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/webp-to-jpg</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/webp-to-png</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/webp-to-gif</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/webp-to-svg</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/webp-to-heic</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/webp-to-tiff</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/webp-to-bmp</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/webp-to-psd</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/gif-to-jpg</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/gif-to-png</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/gif-to-webp</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/gif-to-svg</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/gif-to-heic</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/gif-to-tiff</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/gif-to-bmp</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/gif-to-psd</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/svg-to-jpg</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/svg-to-png</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/svg-to-webp</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/svg-to-gif</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/svg-to-heic</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/svg-to-tiff</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/svg-to-bmp</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/svg-to-psd</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/heic-to-jpg</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/heic-to-png</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/heic-to-webp</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/heic-to-gif</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/heic-to-svg</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/heic-to-tiff</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/heic-to-bmp</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/heic-to-psd</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/tiff-to-jpg</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/tiff-to-png</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/tiff-to-webp</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/tiff-to-gif</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/tiff-to-svg</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/tiff-to-heic</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/tiff-to-bmp</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/tiff-to-psd</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/bmp-to-jpg</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/bmp-to-png</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/bmp-to-webp</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/bmp-to-gif</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/bmp-to-svg</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/bmp-to-heic</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/bmp-to-tiff</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/bmp-to-psd</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/psd-to-jpg</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/psd-to-png</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/psd-to-webp</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/psd-to-gif</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/psd-to-svg</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/psd-to-heic</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/psd-to-tiff</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/psd-to-bmp</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/png-to-raw</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/jpg-to-raw</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/pdf-to-png</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/pdf-to-jpg</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/pdf-to-webp</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/image-to-base64</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://tools.famral.com/js-minifier</loc>
-  <lastmod>2026-06-19T22:07:02+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://tools.famral.com/</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/developer</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/image</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/academic</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/pdf</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/json-formatter</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/json-minifier</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/image-to-base64</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/base64-to-image</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/css-minifier</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/css-beautifier</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/html-beautifier</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/html-minifier</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/url-decoder</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/url-encoder</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/pdf-to-png</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/pdf-to-jpg</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/pdf-to-webp</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/sql-formatter</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/sql-minifier</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/yaml-to-json</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/json-to-yaml</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/xml-formatter</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/xml-minifier</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/json-to-xml</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/xml-to-json</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/javascript-beautifier</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/javascript-minifier</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/css-to-scss</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/scss-to-css</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/html-to-markdown</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/markdown-to-html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/css-gradient-generator</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/html-viewer</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/xml-viewer</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/json-viewer</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/markdown-viewer</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/js-viewer</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/compress-image</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/photo-editor</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/image-converter</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/crop-image</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/rotate-image</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/flip-image</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/blur-image</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/watermark-image</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/pixelate-image</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/jpg-to-png</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/jpg-to-webp</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/jpg-to-gif</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/jpg-to-svg</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/jpg-to-heic</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/jpg-to-tiff</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/jpg-to-bmp</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/jpg-to-psd</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/png-to-jpg</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/png-to-webp</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/png-to-gif</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/png-to-svg</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/png-to-heic</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/png-to-tiff</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/png-to-bmp</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/png-to-psd</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/webp-to-jpg</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/webp-to-png</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/webp-to-gif</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/webp-to-svg</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/webp-to-heic</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/webp-to-tiff</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/webp-to-bmp</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/webp-to-psd</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/gif-to-jpg</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/gif-to-png</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/gif-to-webp</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/gif-to-svg</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/gif-to-heic</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/gif-to-tiff</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/gif-to-bmp</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/gif-to-psd</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/svg-to-jpg</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/svg-to-png</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/svg-to-webp</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/svg-to-gif</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/svg-to-heic</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/svg-to-tiff</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/svg-to-bmp</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/svg-to-psd</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/heic-to-jpg</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/heic-to-png</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/heic-to-webp</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/heic-to-gif</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/heic-to-svg</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/heic-to-tiff</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/heic-to-bmp</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/heic-to-psd</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/tiff-to-jpg</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/tiff-to-png</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/tiff-to-webp</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/tiff-to-gif</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/tiff-to-svg</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/tiff-to-heic</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/tiff-to-bmp</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/tiff-to-psd</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/bmp-to-jpg</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/bmp-to-png</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/bmp-to-webp</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/bmp-to-gif</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/bmp-to-svg</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/bmp-to-heic</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/bmp-to-tiff</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/bmp-to-psd</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/psd-to-jpg</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/psd-to-png</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/psd-to-webp</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/psd-to-gif</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/psd-to-svg</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/psd-to-heic</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/psd-to-tiff</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/psd-to-bmp</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/png-to-raw</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/jpg-to-raw</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/rtu-sgpa-calculator</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/rtu-cgpa-calculator</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tools.famral.com/js-minifier</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.9</priority>
+  </url>
 </urlset>
