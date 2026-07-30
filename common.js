@@ -276,8 +276,12 @@ function renderHeader() {
     const currentPath = window.location.pathname;
 
     const isHome = currentPath === '/' || currentPath.endsWith('index.html');
-    const isSgpa = currentPath.includes('rtu-sgpa-calculator');
-    const isCgpa = currentPath.includes('rtu-cgpa-calculator');
+    const isRtuSgpa = currentPath.includes('rtu-sgpa-calculator');
+    const isRtuCgpa = currentPath.includes('rtu-cgpa-calculator');
+    const isSkitSgpa = currentPath.includes('skit-sgpa-calculator');
+    const isSkitCgpa = currentPath.includes('skit-cgpa-calculator');
+    const isMbmSgpa = currentPath.includes('mbm-sgpa-calculator');
+    const isMbmCgpa = currentPath.includes('mbm-cgpa-calculator');
 
     const headerHTML = `
         <nav class="navbar">
@@ -292,19 +296,31 @@ function renderHeader() {
                 <div class="nav-links-wrapper" id="navLinks">
                     <a href="/" class="nav-link ${isHome ? 'active' : ''}">Home</a>
                     
-                    <!-- Dropdown: RTU Calculators -->
+                    <!-- Dropdown: Academic Calculators -->
                     <div class="dropdown" id="rtuDropdown">
-                        <button type="button" class="nav-link dropdown-toggle ${(isSgpa || isCgpa) ? 'active' : ''}"
+                        <button type="button" class="nav-link dropdown-toggle ${(isRtuSgpa || isRtuCgpa || isSkitSgpa || isSkitCgpa || isMbmSgpa || isMbmCgpa) ? 'active' : ''}"
                             onclick="toggleDropdown(event, 'rtuDropdown')">
                             <span>Academic Tools</span>
                             <i class="fas fa-chevron-down dropdown-icon"></i>
                         </button>
                         <div class="dropdown-menu">
-                            <a href="/rtu-sgpa-calculator" class="dropdown-item ${isSgpa ? 'active' : ''}">
+                            <a href="/rtu-sgpa-calculator" class="dropdown-item ${isRtuSgpa ? 'active' : ''}">
                                 RTU SGPA Calculator
                             </a>
-                            <a href="/rtu-cgpa-calculator" class="dropdown-item ${isCgpa ? 'active' : ''}">
+                            <a href="/rtu-cgpa-calculator" class="dropdown-item ${isRtuCgpa ? 'active' : ''}">
                                 RTU CGPA Calculator
+                            </a>
+                            <a href="/skit-sgpa-calculator" class="dropdown-item ${isSkitSgpa ? 'active' : ''}">
+                                SKIT SGPA Calculator
+                            </a>
+                            <a href="/skit-cgpa-calculator" class="dropdown-item ${isSkitCgpa ? 'active' : ''}">
+                                SKIT CGPA Calculator
+                            </a>
+                            <a href="/mbm-sgpa-calculator" class="dropdown-item ${isMbmSgpa ? 'active' : ''}">
+                                MBM SGPA Calculator
+                            </a>
+                            <a href="/mbm-cgpa-calculator" class="dropdown-item ${isMbmCgpa ? 'active' : ''}">
+                                MBM CGPA Calculator
                             </a>
                         </div>
                     </div>
@@ -324,14 +340,16 @@ function renderFooter() {
     const footerHTML = `
         <div class="container">
             <div class="footer-links-grid">
-                <!-- Column 1: RTU Tools -->
+                <!-- Column 1: University Tools -->
                 <div class="footer-column">
-                    <h4>RTU Tools</h4>
+                    <h4>University Tools</h4>
                     <ul>
                         <li><a href="/rtu-sgpa-calculator">RTU SGPA Calculator</a></li>
                         <li><a href="/rtu-cgpa-calculator">RTU CGPA Calculator</a></li>
-                        <li><a href="/rtu-sgpa-calculator#marks-converter">Marks to Grade Converter</a></li>
-                        <li><a href="/#cbcs-grading">RTU CBCS Grading Rules</a></li>
+                        <li><a href="/skit-sgpa-calculator">SKIT SGPA Calculator</a></li>
+                        <li><a href="/skit-cgpa-calculator">SKIT CGPA Calculator</a></li>
+                        <li><a href="/mbm-sgpa-calculator">MBM SGPA Calculator</a></li>
+                        <li><a href="/mbm-cgpa-calculator">MBM CGPA Calculator</a></li>
                     </ul>
                 </div>
 
@@ -351,7 +369,7 @@ function renderFooter() {
                     <ul>
                         <li><a href="/rtu-sgpa-calculator">B.Tech Syllabus Guide</a></li>
                         <li><a href="/rtu-cgpa-calculator">CGPA to Percentage Formula</a></li>
-                        <li><a href="/rtu-cgpa-calculator">B.Tech Honours Criteria</a></li>
+                        <li><a href="/skit-sgpa-calculator#marks-converter">Marks to Grade Converter</a></li>
                         <li><a href="/">Semester Credit Matrix</a></li>
                     </ul>
                 </div>
