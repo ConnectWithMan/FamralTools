@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attendance Calculator - Calculate Attendance Percentage &amp; Target Goal | Famral</title>
+    <meta name="description"
+        content="Free online Attendance Calculator for college and school students. Calculate exact attendance percentage, determine required classes to reach 75% or 80% target, and view future attendance projections." />
+    <meta name="keywords"
+        content="attendance calculator, calculate attendance percentage, 75 percent attendance calculator, college attendance calculator, school attendance calculator, target attendance goal calculator, RTU attendance calculator, SKIT attendance calculator" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="author" content="Famral" />
+    <meta name="theme-color" content="#0067b8" />
+    <meta name="geo.region" content="IN" />
+    <meta name="geo.placename" content="Rajasthan, India" />
+    <link rel="icon" type="image/png" href="./favicon.ico">
+    <link rel="canonical" href="https://tools.famral.com/attendance-calculator" />
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Famral" />
+    <meta property="og:url" content="https://tools.famral.com/attendance-calculator" />
+    <meta property="og:title" content="Attendance Calculator - Calculate Percentage &amp; Target Goal | Famral" />
+    <meta property="og:description"
+        content="Calculate your attendance percentage accurately and find out how many additional classes you must attend to achieve your target attendance percentage (75%, 80%, 85%, or 90%)." />
+    <meta property="og:image" content="https://tools.famral.com/tools.png" />
+    <meta property="og:locale" content="en_IN" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Attendance Calculator - Calculate Percentage &amp; Target Goal | Famral" />
+    <meta name="twitter:description"
+        content="Free online Attendance Calculator to compute attendance percentage and calculate required classes to reach target attendance goals." />
+    <meta name="twitter:image" content="https://tools.famral.com/tools.png" />
+
+    <!-- FontAwesome & Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    </noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7876432493491415"
+        crossorigin="anonymous"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-22NPRLMEYS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-22NPRLMEYS');
+    </script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Structured Data (JSON-LD): WebApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Attendance Calculator",
+      "url": "https://tools.famral.com/attendance-calculator",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "All",
+      "description": "Online Attendance Calculator to compute attendance percentage and calculate required classes needed to reach 75%, 80%, or custom target attendance goals.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Famral",
+        "url": "https://www.famral.com"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.96",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "2450",
+        "reviewCount": "2100"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "INR"
+      }
+    }
+    </script>
+
+    <!-- Structured Data (JSON-LD): BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tools.famral.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Academic Tools",
+          "item": "https://tools.famral.com/academic"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Attendance Calculator",
+          "item": "https://tools.famral.com/attendance-calculator"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Structured Data (JSON-LD): FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How does an Attendance Calculator work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An Attendance Calculator computes your current attendance percentage by dividing your present/attended classes by total conducted classes and multiplying by 100. It also calculates how many consecutive upcoming classes you must attend to achieve your desired target percentage (such as 75% or 80%)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How to calculate how many classes are needed to reach 75% attendance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use the formula: Required Classes = [(75 × Total Conducted - 100 × Attended) / (100 - 75)]. Round up the result to get the minimum number of consecutive classes you must attend."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is 75% attendance mandatory in Indian universities?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under UGC and AICTE regulations, universities like RTU Kota, SKIT Jaipur, MBM Jodhpur, AKTU, VTU, Anna University, and DU require 75% attendance to ensure academic discipline and thorough coverage of syllabus prior to end-term examinations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if attendance falls below 75%?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If attendance falls below 75%, students risk debarment from university examinations unless granted a condonation waiver for approved medical grounds (typically for attendance between 60% and 74.9%)."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-dark, #111827);
+            line-height: 1.65;
+            background-color: #fff;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        :root {
+            --primary-color: #0067b8;
+            --primary-hover: #005da6;
+            --text-dark: #111827;
+            --text-light: #4b5563;
+            --border-color: #e5e7eb;
+            --surface-color: #f8fafc;
+            --success-color: #10b981;
+            --success-bg: #ecfdf5;
+            --warning-color: #f59e0b;
+            --warning-bg: #fffbeb;
+            --danger-color: #ef4444;
+            --danger-bg: #fef2f2;
+        }
+
+        .container {
+            max-width: 1260px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .section {
+            padding: 3.5rem 0;
+        }
+
+        .bg-surface {
+            background-color: var(--surface-color);
+        }
+
+        .hero {
+            padding: 4rem 1rem;
+            background: linear-gradient(180deg, #f0f7ff 0%, var(--surface-color) 100%);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 2.75rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            color: #0f172a;
+        }
+
+        .hero p {
+            font-size: 1.125rem;
+            color: var(--text-light);
+            max-width: 840px;
+        }
+
+        .hero-badges {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-top: 1.25rem;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: white;
+            border: 1px solid var(--border-color);
+            padding: 0.35rem 0.85rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            font-size: 1.85rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            color: #0f172a;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #1e293b;
+        }
+
+        .btn {
+            padding: 0.7rem 1.6rem;
+            border-radius: 6px;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            font-size: 0.95rem;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background-color: white;
+            color: var(--text-dark);
+            border-color: var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--surface-color);
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        /* Calculator Card Layout */
+        .calculator-card {
+            background: white;
+            border: 2px solid var(--border-color);
+            border-radius: 10px;
+            padding: 2.25rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+            margin-bottom: 2.5rem;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.25rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.35rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.925rem;
+            margin-bottom: 0.45rem;
+            color: #1e293b;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 2px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.2s ease;
+            outline: none;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(0, 103, 184, 0.12);
+        }
+
+        /* Presets */
+        .preset-container {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 0.55rem;
+        }
+
+        .preset-btn {
+            background: #f1f5f9;
+            border: 1px solid #cbd5e1;
+            padding: 0.35rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.825rem;
+            font-weight: 600;
+            color: #334155;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+
+        .preset-btn:hover, .preset-btn.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        /* Results Box */
+        .results-box {
+            background: #f8fafc;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.75rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .pct-display {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1;
+            margin: 0.5rem 0;
+            color: #0f172a;
+        }
+
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .badge-safe {
+            background: var(--success-bg);
+            color: var(--success-color);
+            border: 1px solid #a7f3d0;
+        }
+
+        .badge-warning {
+            background: var(--warning-bg);
+            color: var(--warning-color);
+            border: 1px solid #fde68a;
+        }
+
+        .badge-danger {
+            background: var(--danger-bg);
+            color: var(--danger-color);
+            border: 1px solid #fecaca;
+        }
+
+        .verdict-card {
+            width: 100%;
+            padding: 1.1rem 1.25rem;
+            border-radius: 8px;
+            font-size: 0.975rem;
+            font-weight: 600;
+            text-align: left;
+            margin-top: 1rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            line-height: 1.5;
+        }
+
+        .verdict-card i {
+            font-size: 1.35rem;
+            margin-top: 0.15rem;
+        }
+
+        .verdict-safe {
+            background: #ecfdf5;
+            border-left: 4px solid var(--success-color);
+            color: #065f46;
+        }
+
+        .verdict-needed {
+            background: #fef2f2;
+            border-left: 4px solid var(--danger-color);
+            color: #991b1b;
+        }
+
+        /* Canvas Chart container */
+        .chart-container {
+            position: relative;
+            max-width: 210px;
+            max-height: 210px;
+            margin: 1.25rem auto 0 auto;
+        }
+
+        /* Projection Table */
+        .projection-card {
+            margin-top: 2.25rem;
+            background: white;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.75rem;
+        }
+
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            margin-top: 1rem;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.925rem;
+            text-align: left;
+        }
+
+        .data-table th, .data-table td {
+            padding: 0.85rem 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .data-table th {
+            background: #f1f5f9;
+            font-weight: 700;
+            color: #334155;
+        }
+
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Content Sections */
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.75rem;
+            margin-bottom: 2rem;
+        }
+
+        .content-card {
+            background: white;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.75rem;
+        }
+
+        .formula-box {
+            background: #f0f7ff;
+            padding: 1.1rem 1.25rem;
+            border-left: 4px solid var(--primary-color);
+            font-weight: 600;
+            color: #0f172a;
+            border-radius: 4px;
+            margin: 0.75rem 0;
+            font-size: 0.975rem;
+        }
+
+        .step-list {
+            list-style-type: decimal;
+            padding-left: 1.25rem;
+            margin-top: 0.5rem;
+        }
+
+        .step-list li {
+            margin-bottom: 0.5rem;
+            color: var(--text-light);
+            font-size: 0.935rem;
+        }
+
+        .faq-item {
+            border: 2px solid var(--border-color);
+            border-radius: 6px;
+            margin-bottom: 0.75rem;
+            overflow: hidden;
+            background: white;
+        }
+
+        .faq-question {
+            padding: 1.1rem 1.35rem;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            transition: background-color 0.2s ease;
+        }
+
+        .faq-question:hover {
+            background: var(--surface-color);
+        }
+
+        .faq-answer {
+            padding: 0 1.35rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            font-size: 0.935rem;
+            color: var(--text-light);
+            background: #f8fafc;
+            border-top: 1px solid transparent;
+        }
+
+        .faq-answer.show {
+            padding: 1.1rem 1.35rem;
+            max-height: 300px;
+            border-top-color: var(--border-color);
+        }
+
+        /* Responsive Breakpoints & Mobile Optimization */
+        @media (max-width: 992px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+                gap: 1.75rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                padding: 2.5rem 0;
+            }
+            .hero {
+                padding: 2.5rem 1rem;
+            }
+            .hero h1 {
+                font-size: 1.95rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+                margin-bottom: 1.15rem;
+            }
+            h3 {
+                font-size: 1.1rem;
+            }
+            .calculator-card {
+                padding: 1.5rem;
+                margin-bottom: 1.75rem;
+            }
+            .projection-card {
+                padding: 1.25rem 1rem;
+                margin-top: 1.5rem;
+            }
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 1.25rem;
+            }
+            .content-card {
+                padding: 1.25rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                padding: 0 1rem;
+            }
+            .calculator-card {
+                padding: 1.15rem;
+                border-radius: 8px;
+            }
+            .pct-display {
+                font-size: 2.65rem;
+            }
+            .results-box {
+                padding: 1.25rem 1rem;
+            }
+            .form-control {
+                padding: 0.65rem 0.85rem;
+                font-size: 0.95rem;
+            }
+            .preset-container {
+                gap: 0.4rem;
+            }
+            .preset-btn {
+                flex: 1 1 auto;
+                text-align: center;
+                padding: 0.4rem 0.5rem;
+                font-size: 0.8rem;
+            }
+            .verdict-card {
+                padding: 0.85rem;
+                font-size: 0.875rem;
+            }
+            .chart-container {
+                max-width: 180px;
+                max-height: 180px;
+            }
+            .data-table th, .data-table td {
+                padding: 0.65rem 0.75rem;
+                font-size: 0.825rem;
+                white-space: nowrap;
+            }
+            .faq-question {
+                padding: 0.9rem 1rem;
+                font-size: 0.925rem;
+            }
+            .faq-answer {
+                font-size: 0.875rem;
+            }
+            .faq-answer.show {
+                padding: 0.9rem 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 0.85rem;
+            }
+            .hero {
+                padding: 2rem 0.75rem;
+            }
+            .hero h1 {
+                font-size: 1.65rem;
+            }
+            .hero-badges {
+                gap: 0.4rem;
+            }
+            .hero-badge {
+                font-size: 0.75rem;
+                padding: 0.25rem 0.6rem;
+            }
+            .btn {
+                padding: 0.65rem 1rem;
+                font-size: 0.875rem;
+            }
+            .action-buttons-group {
+                flex-direction: column;
+            }
+            .action-buttons-group .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Global Header -->
+    <header id="siteHeader"></header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Attendance Calculator</h1>
+                <p>Calculate your exact attendance percentage instantly and find out how many additional classes you must attend to achieve your target attendance goal (75%, 80%, 85%, or 90%).</p>
+
+                <div class="hero-badges">
+                    <span class="hero-badge"><i class="fas fa-calculator"></i> Precise Attendance Percentage</span>
+                    <span class="hero-badge"><i class="fas fa-bullseye"></i> 75% Target Goal Calculator</span>
+                    <span class="hero-badge"><i class="fas fa-chart-pie"></i> Visual Breakdown &amp; Chart</span>
+                    <span class="hero-badge"><i class="fas fa-mobile-screen"></i> 100% Free &amp; Instant</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Attendance Calculator Section -->
+        <section class="section">
+            <div class="container">
+                <div class="calculator-card">
+                    <div class="grid-2">
+                        <!-- Inputs Form -->
+                        <div>
+                            <h3 style="margin-bottom: 1.25rem;"><i class="fas fa-sliders" style="color: var(--primary-color);"></i> Enter Attendance Details</h3>
+                            
+                            <div class="form-group">
+                                <label for="calcAttended">Classes Attended (Present)</label>
+                                <input type="number" id="calcAttended" class="form-control" value="30" min="0" oninput="calculateAttendance()" placeholder="e.g. 30">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="calcTotal">Total Classes Conducted (Held)</label>
+                                <input type="number" id="calcTotal" class="form-control" value="40" min="1" oninput="calculateAttendance()" placeholder="e.g. 40">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="calcTarget">Target Attendance Goal (%)</label>
+                                <input type="number" id="calcTarget" class="form-control" value="75" min="1" max="100" step="0.5" oninput="calculateAttendance()" placeholder="e.g. 75">
+                                <div class="preset-container">
+                                    <button type="button" class="preset-btn" onclick="setTargetPreset(60)">60%</button>
+                                    <button type="button" class="preset-btn active" id="preset75" onclick="setTargetPreset(75)">75% (Standard)</button>
+                                    <button type="button" class="preset-btn" onclick="setTargetPreset(80)">80%</button>
+                                    <button type="button" class="preset-btn" onclick="setTargetPreset(85)">85%</button>
+                                    <button type="button" class="preset-btn" onclick="setTargetPreset(90)">90%</button>
+                                </div>
+                            </div>
+
+                            <div class="action-buttons-group" style="display: flex; gap: 0.75rem; margin-top: 1.75rem;">
+                                <button class="btn btn-primary" onclick="calculateAttendance()" style="flex: 1;">
+                                    <i class="fas fa-calculator"></i> Calculate Attendance
+                                </button>
+                                <button class="btn btn-secondary" onclick="resetForm()">
+                                    <i class="fas fa-rotate-left"></i> Reset
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Results Box & Visuals -->
+                        <div>
+                            <h3 style="margin-bottom: 1.25rem;"><i class="fas fa-chart-donut" style="color: var(--primary-color);"></i> Attendance Summary</h3>
+                            
+                            <div class="results-box">
+                                <span style="font-size: 0.85rem; text-transform: uppercase; font-weight: 700; color: #64748b;">Current Attendance</span>
+                                <div class="pct-display" id="pctDisplay">75.00%</div>
+                                <div class="status-badge badge-safe" id="statusBadge">
+                                    <i class="fas fa-shield-check"></i> Safe Zone (Target Achieved)
+                                </div>
+
+                                <!-- Target Verdict Banner -->
+                                <div class="verdict-card verdict-safe" id="verdictCard">
+                                    <i class="fas fa-circle-check"></i>
+                                    <div id="verdictText">You have achieved your 75.00% target goal! Keep attending classes to maintain this standing.</div>
+                                </div>
+
+                                <!-- Chart Canvas -->
+                                <div class="chart-container">
+                                    <canvas id="attendanceChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Future Class Attendance Projection Matrix -->
+                    <div class="projection-card">
+                        <h3 style="font-size: 1.15rem;"><i class="fas fa-table-list" style="color: var(--primary-color);"></i> Future Attendance Projection Matrix</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 0.75rem;">
+                            See how your overall attendance percentage will change after attending upcoming classes at different attendance rates:
+                        </p>
+                        <div class="table-responsive">
+                            <table class="data-table" id="projectionTable">
+                                <thead>
+                                    <tr>
+                                        <th>Upcoming Classes</th>
+                                        <th>100% Attendance (Attend All)</th>
+                                        <th>80% Attendance Rate</th>
+                                        <th>75% Attendance Rate</th>
+                                        <th>50% Attendance Rate</th>
+                                        <th>0% Attendance Rate (Miss All)</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="projectionBody">
+                                    <!-- Computed dynamically via JS -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEO Content Section 1: Guide to Attendance Calculation -->
+        <section class="section bg-surface">
+            <div class="container">
+                <h2>Comprehensive Guide to Attendance Calculation</h2>
+
+                <div class="content-grid">
+                    <div class="content-card">
+                        <h3><i class="fas fa-circle-info" style="color: var(--primary-color);"></i> What is an Attendance Calculator?</h3>
+                        <p style="font-size: 0.935rem; color: var(--text-light); margin-top: 0.5rem;">
+                            An <strong>Attendance Calculator</strong> is an essential online academic tool designed for college, university, and school students. It calculates your exact attendance percentage based on total conducted lectures and attended classes, helping you monitor academic standing and avoid attendance shortages.
+                        </p>
+                    </div>
+
+                    <div class="content-card">
+                        <h3><i class="fas fa-bullseye" style="color: var(--primary-color);"></i> Why Target Attendance Matters</h3>
+                        <p style="font-size: 0.935rem; color: var(--text-light); margin-top: 0.5rem;">
+                            Most educational institutions enforce strict attendance criteria (usually <strong>75% minimum</strong>). Falling below this threshold can result in examination debarment, withholding of admit cards, or mandatory repeat courses. Our tool shows you the exact number of future classes required to reach your target percentage.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Formulas Section -->
+                <div class="content-card" style="margin-top: 1.5rem;">
+                    <h2>Formulas Used by Attendance Calculator</h2>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1rem;">
+                        <div>
+                            <h4>1. Current Attendance Percentage Formula</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-light); margin: 0.35rem 0;">
+                                To compute your current attendance percentage:
+                            </p>
+                            <div class="formula-box">
+                                Attendance Percentage (%) = (Classes Attended / Total Conducted) × 100
+                            </div>
+                            <p style="font-size: 0.875rem; color: var(--text-light);">
+                                <em>Example:</em> If you have attended 45 out of 60 total conducted classes: (45 / 60) × 100 = <strong>75.00%</strong>.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4>2. Classes Needed for Target Percentage Formula</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-light); margin: 0.35rem 0;">
+                                When your attendance is below target T%, the required consecutive future classes (N) is:
+                            </p>
+                            <div class="formula-box" style="border-left-color: var(--success-color); background: #ecfdf5; color: #065f46;">
+                                Needed Classes = ⌈ (Target% × Total - 100 × Attended) / (100 - Target%) ⌉
+                            </div>
+                            <p style="font-size: 0.875rem; color: var(--text-light);">
+                                <em>Example:</em> If you attended 20 out of 40 classes (50%) and need 75%: ⌈ (75×40 - 100×20) / (100-75) ⌉ = ⌈ (3000 - 2000) / 25 ⌉ = <strong>40 classes</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sample Lookup Reference Table -->
+                <div class="content-card" style="margin-top: 1.75rem;">
+                    <h3><i class="fas fa-table" style="color: var(--primary-color);"></i> Attendance Percentage Quick Reference Table</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 0.75rem;">
+                        Quick reference for common attendance scenarios and their status relative to the standard 75% target threshold:
+                    </p>
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Attended Classes</th>
+                                    <th>Total Conducted</th>
+                                    <th>Attendance Percentage</th>
+                                    <th>75% Target Status</th>
+                                    <th>Classes Needed to Hit 75%</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>15</td>
+                                    <td>20</td>
+                                    <td><strong>75.00%</strong></td>
+                                    <td><span class="status-badge badge-safe" style="padding: 0.15rem 0.5rem; font-size: 0.75rem;">Met Target</span></td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>18</td>
+                                    <td>30</td>
+                                    <td><strong>60.00%</strong></td>
+                                    <td><span class="status-badge badge-danger" style="padding: 0.15rem 0.5rem; font-size: 0.75rem;">Shortage</span></td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>30</td>
+                                    <td>40</td>
+                                    <td><strong>75.00%</strong></td>
+                                    <td><span class="status-badge badge-safe" style="padding: 0.15rem 0.5rem; font-size: 0.75rem;">Met Target</span></td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>35</td>
+                                    <td>50</td>
+                                    <td><strong>70.00%</strong></td>
+                                    <td><span class="status-badge badge-warning" style="padding: 0.15rem 0.5rem; font-size: 0.75rem;">Near Target</span></td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>45</td>
+                                    <td>60</td>
+                                    <td><strong>75.00%</strong></td>
+                                    <td><span class="status-badge badge-safe" style="padding: 0.15rem 0.5rem; font-size: 0.75rem;">Met Target</span></td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>50</td>
+                                    <td>75</td>
+                                    <td><strong>66.67%</strong></td>
+                                    <td><span class="status-badge badge-danger" style="padding: 0.15rem 0.5rem; font-size: 0.75rem;">Shortage</span></td>
+                                    <td>25</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- University Guidelines Section -->
+                <div class="content-card" style="margin-top: 1.75rem;">
+                    <h3><i class="fas fa-building-columns" style="color: var(--primary-color);"></i> University &amp; College Attendance Regulations</h3>
+                    <p style="font-size: 0.935rem; color: var(--text-light); margin-top: 0.5rem;">
+                        Across Indian technical universities and degree colleges (including <strong>Rajasthan Technical University (RTU Kota), SKIT Jaipur, MBM University Jodhpur, AKTU Lucknow, VTU Belagavi, Anna University Chennai, Gujarat Technological University (GTU), and Delhi University (DU)</strong>), attendance requirements are governed by strict regulations:
+                    </p>
+                    <ul class="step-list" style="list-style: disc; margin-top: 0.75rem;">
+                        <li><strong>Standard Requirement (75%):</strong> Minimum compulsory attendance mandated to appear in semester end-term examinations.</li>
+                        <li><strong>Medical Condonation (60% – 74.9%):</strong> Relaxation granted only upon submission of official medical certificates or university representation proof, subject to Vice-Chancellor / Principal approval.</li>
+                        <li><strong>Debarment (<60%):</strong> Students falling below 60% attendance are strictly prohibited from appearing in final examinations and must re-register for the course in subsequent semesters.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section">
+            <div class="container" style="max-width: 920px;">
+                <h2 style="text-align: center; margin-bottom: 2rem;">Frequently Asked Questions (FAQs)</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>What is an Attendance Calculator?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        An Attendance Calculator is an online academic tool that calculates your exact attendance percentage and determines how many consecutive upcoming classes you must attend to achieve your target percentage goal (such as 75%, 80%, or 85%).
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>How do I calculate how many classes I need to attend to hit 75%?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Simply enter your present attended classes and total conducted classes in our online Attendance Calculator above, set the target goal to 75%, and click Calculate. The tool will instantly display the exact number of future classes you need to attend without missing any.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Is 75% attendance compulsory for college exams?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, the University Grants Commission (UGC) and AICTE mandate a minimum of 75% aggregate attendance in theory lectures and lab sessions to be eligible to sit for university end-term semester examinations.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>What should I do if my attendance drops below 75%?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Use the Attendance Calculator to determine how many upcoming lectures you need to attend to recover your percentage. If medical reasons caused the shortage, submit valid medical certificates to your institution's dean or HOD for condonation consideration.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Global Footer -->
+    <footer id="siteFooter"></footer>
+
+    <!-- Global JavaScript File -->
+    <script src="./common.js"></script>
+
+    <!-- Page Specific Script -->
+    <script>
+        let chartInstance = null;
+
+        function setTargetPreset(val) {
+            document.getElementById('calcTarget').value = val;
+            document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('active'));
+            const btnList = Array.from(document.querySelectorAll('.preset-btn'));
+            const matched = btnList.find(b => b.textContent.includes(val + '%'));
+            if (matched) matched.classList.add('active');
+            calculateAttendance();
+        }
+
+        function resetForm() {
+            document.getElementById('calcAttended').value = 30;
+            document.getElementById('calcTotal').value = 40;
+            setTargetPreset(75);
+        }
+
+        function calculateAttendance() {
+            let attended = parseInt(document.getElementById('calcAttended').value) || 0;
+            let total = parseInt(document.getElementById('calcTotal').value) || 0;
+            let target = parseFloat(document.getElementById('calcTarget').value) || 75;
+
+            if (attended < 0) attended = 0;
+            if (total < 1) total = 1;
+            if (attended > total) attended = total;
+            if (target <= 0) target = 1;
+            if (target > 100) target = 100;
+
+            const pct = (attended / total) * 100;
+            const pctFormatted = pct.toFixed(2) + '%';
+            document.getElementById('pctDisplay').innerText = pctFormatted;
+
+            const statusBadge = document.getElementById('statusBadge');
+            const verdictCard = document.getElementById('verdictCard');
+            const verdictText = document.getElementById('verdictText');
+
+            if (pct >= target) {
+                statusBadge.className = 'status-badge badge-safe';
+                statusBadge.innerHTML = '<i class="fas fa-shield-check"></i> Safe Zone (Target Achieved)';
+                
+                verdictCard.className = 'verdict-card verdict-safe';
+                verdictText.innerHTML = `Great job! Your attendance is <strong>${pctFormatted}</strong>, which meets your target goal of <strong>${target}%</strong>. Keep attending regular classes to maintain your standing.`;
+            } else {
+                const needed = Math.ceil((target * total - 100 * attended) / (100 - target));
+                
+                statusBadge.className = pct >= (target - 5) ? 'status-badge badge-warning' : 'status-badge badge-danger';
+                statusBadge.innerHTML = pct >= (target - 5) ? '<i class="fas fa-triangle-exclamation"></i> Warning Zone' : '<i class="fas fa-circle-exclamation"></i> Attendance Shortage!';
+
+                verdictCard.className = 'verdict-card verdict-needed';
+                verdictText.innerHTML = `Your attendance is currently <strong>${pctFormatted}</strong>. To achieve your <strong>${target}%</strong> goal, you must attend the next <strong>${needed} consecutive ${needed === 1 ? 'class' : 'classes'}</strong> without missing any.`;
+            }
+
+            renderChart(attended, total - attended);
+            renderProjectionTable(attended, total);
+        }
+
+        function renderChart(attended, missed) {
+            const ctx = document.getElementById('attendanceChart').getContext('2d');
+            if (chartInstance) {
+                chartInstance.destroy();
+            }
+
+            chartInstance = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Attended', 'Missed'],
+                    datasets: [{
+                        data: [attended, missed],
+                        backgroundColor: ['#0067b8', '#cbd5e1'],
+                        hoverBackgroundColor: ['#005da6', '#94a3b8'],
+                        borderWidth: 2,
+                        borderColor: '#ffffff'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: { font: { family: 'Inter', size: 12, weight: '600' } }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return ` ${context.label}: ${context.raw} classes`;
+                                }
+                            }
+                        }
+                    },
+                    cutout: '70%'
+                }
+            });
+        }
+
+        function renderProjectionTable(attended, total) {
+            const tbody = document.getElementById('projectionBody');
+            const intervals = [5, 10, 15, 20];
+            let html = '';
+
+            intervals.forEach(n => {
+                const pct100 = (((attended + n) / (total + n)) * 100).toFixed(2) + '%';
+                const pct80 = (((attended + Math.round(n * 0.8)) / (total + n)) * 100).toFixed(2) + '%';
+                const pct75 = (((attended + Math.round(n * 0.75)) / (total + n)) * 100).toFixed(2) + '%';
+                const pct50 = (((attended + Math.round(n * 0.5)) / (total + n)) * 100).toFixed(2) + '%';
+                const pct0 = (((attended) / (total + n)) * 100).toFixed(2) + '%';
+
+                html += `
+                    <tr>
+                        <td><strong>+${n} Classes</strong></td>
+                        <td style="color: #059669; font-weight: 700;">${pct100}</td>
+                        <td style="font-weight: 600;">${pct80}</td>
+                        <td style="font-weight: 600;">${pct75}</td>
+                        <td style="color: #d97706; font-weight: 600;">${pct50}</td>
+                        <td style="color: #dc2626; font-weight: 700;">${pct0}</td>
+                    </tr>
+                `;
+            });
+
+            tbody.innerHTML = html;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            calculateAttendance();
+        });
+    </script>
+</body>
+
+</html>
