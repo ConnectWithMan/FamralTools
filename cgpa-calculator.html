@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CGPA Calculator - Calculate Cumulative CGPA &amp; Percentage | Famral</title>
+    <meta name="description"
+        content="Free universal CGPA Calculator & Percentage Converter for college and university students. Calculate cumulative CGPA, convert CGPA to percentage, plan target SGPA, and view semester progression charts." />
+    <meta name="keywords"
+        content="CGPA calculator, calculate CGPA, CGPA to percentage calculator, SGPA to CGPA calculator, target CGPA calculator, college grade calculator, GPA calculator, 10 point CGPA calculator, 4 point GPA calculator" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="author" content="Famral" />
+    <meta name="theme-color" content="#0067b8" />
+    <meta name="geo.region" content="IN" />
+    <meta name="geo.placename" content="India" />
+    <link rel="icon" type="image/png" href="./favicon.ico">
+    <link rel="canonical" href="https://tools.famral.com/cgpa-calculator" />
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Famral" />
+    <meta property="og:url" content="https://tools.famral.com/cgpa-calculator" />
+    <meta property="og:title" content="Universal CGPA Calculator &amp; Percentage Converter | Famral" />
+    <meta property="og:description"
+        content="Calculate Cumulative CGPA and equivalent percentage easily. Supports 10-point scale, 4.0 GPA scale, 5.0 scale, and custom schemes with target CGPA planning." />
+    <meta property="og:image" content="https://tools.famral.com/tools.png" />
+    <meta property="og:locale" content="en_IN" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Universal CGPA Calculator &amp; Percentage Converter | Famral" />
+    <meta name="twitter:description"
+        content="Free online CGPA Calculator with percentage conversion, target CGPA planner, and visual grade progression charts." />
+    <meta name="twitter:image" content="https://tools.famral.com/tools.png" />
+
+    <!-- FontAwesome & Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    </noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7876432493491415"
+        crossorigin="anonymous"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-22NPRLMEYS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-22NPRLMEYS');
+    </script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Structured Data (JSON-LD): WebApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "CGPA Calculator & Percentage Converter",
+      "url": "https://tools.famral.com/cgpa-calculator",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "All",
+      "description": "Calculate exact Cumulative Grade Point Average (CGPA), convert CGPA to percentage, and plan target CGPA for future semesters.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Famral",
+        "url": "https://www.famral.com"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.96",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "4120",
+        "reviewCount": "3850"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "INR"
+      }
+    }
+    </script>
+
+    <!-- Structured Data (JSON-LD): BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tools.famral.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Academic Tools",
+          "item": "https://tools.famral.com/academic"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "CGPA Calculator",
+          "item": "https://tools.famral.com/cgpa-calculator"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Structured Data (JSON-LD): FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How is CGPA calculated from semester SGPAs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CGPA (Cumulative Grade Point Average) is calculated by taking the sum of the product of SGPA and total credits of each semester, divided by the cumulative total credits: CGPA = Σ(SGPA_i × Credits_i) / Σ(Credits_i)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the standard formula to convert CGPA to Percentage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under standard 10-point grading systems, Percentage (%) = CGPA × 10. Under 9.5x scale systems, Percentage (%) = CGPA × 9.5."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What CGPA qualifies for First Class with Distinction?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Generally, a cumulative CGPA of 7.50 or higher (75% equivalent) qualifies a student for First Class with Distinction."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-dark, #111827);
+            line-height: 1.6;
+            background-color: #f8fafc;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        :root {
+            --primary-color: #0067b8;
+            --primary-hover: #005da6;
+            --text-dark: #111827;
+            --text-light: #4b5563;
+            --border-color: #e5e7eb;
+            --surface-color: #ffffff;
+            --bg-light: #f8fafc;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+        }
+
+        .container {
+            max-width: 1260px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .section {
+            padding: 3rem 0;
+        }
+
+        /* Hero Section */
+        .hero-banner {
+            background: linear-gradient(135deg, #0067b8 0%, #004279 100%);
+            color: white;
+            padding: 3.5rem 0 4rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-banner::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-subtitle {
+            font-size: 1.15rem;
+            max-width: 750px;
+            margin: 0 auto 1.5rem;
+            color: #e0f2fe;
+            font-weight: 400;
+        }
+
+        .hero-badges {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .badge-pill {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #ffffff;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        /* Preset Bar */
+        .preset-container {
+            background: white;
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-top: -2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+            border: 1px solid var(--border-color);
+            position: relative;
+            z-index: 10;
+        }
+
+        .preset-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .preset-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .preset-buttons {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-preset {
+            background: #f1f5f9;
+            border: 1px solid #cbd5e1;
+            color: #334155;
+            padding: 0.45rem 0.9rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn-preset:hover,
+        .btn-preset.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+            box-shadow: 0 4px 12px rgba(0, 103, 184, 0.25);
+        }
+
+        /* Calculator Grid */
+        .calc-grid {
+            display: grid;
+            grid-template-columns: 7fr 5fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 992px) {
+            .calc-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.75rem;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+            margin-bottom: 2rem;
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid #f1f5f9;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .card-subtitle {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-top: 0.2rem;
+        }
+
+        /* Table Styling */
+        .table-responsive {
+            overflow-x: auto;
+            margin-bottom: 1.25rem;
+        }
+
+        .calc-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        .calc-table th {
+            background: #f8fafc;
+            padding: 0.75rem 1rem;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #475569;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .calc-table td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid #f1f5f9;
+            vertical-align: middle;
+        }
+
+        .input-control {
+            width: 100%;
+            padding: 0.6rem 0.8rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            font-family: inherit;
+            color: var(--text-dark);
+            transition: border-color 0.2s, box-shadow 0.2s;
+            background: #fff;
+        }
+
+        .input-control:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(0, 103, 184, 0.15);
+        }
+
+        .btn-icon-danger {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            color: var(--danger-color);
+            width: 36px;
+            height: 36px;
+            border-radius: 6px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn-icon-danger:hover {
+            background: var(--danger-color);
+            color: white;
+            border-color: var(--danger-color);
+        }
+
+        .table-actions {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.7rem 1.4rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+            box-shadow: 0 4px 12px rgba(0, 103, 184, 0.3);
+        }
+
+        .btn-outline {
+            background: white;
+            border: 1px solid #cbd5e1;
+            color: #334155;
+        }
+
+        .btn-outline:hover {
+            background: #f8fafc;
+            border-color: #94a3b8;
+        }
+
+        /* Results Display Card */
+        .result-highlight-box {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            border: 1px solid #bae6fd;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .result-cgpa-val {
+            font-size: 3.2rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            line-height: 1;
+            margin: 0.4rem 0;
+        }
+
+        .result-label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #0369a1;
+            letter-spacing: 0.05em;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .metric-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .metric-val {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .metric-title {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            font-weight: 600;
+            margin-top: 0.2rem;
+        }
+
+        .standing-badge {
+            display: inline-block;
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        .badge-distinction {
+            background: #dcfce7;
+            color: #15803d;
+            border: 1px solid #86efac;
+        }
+
+        .badge-firstclass {
+            background: #dbeafe;
+            color: #1d4ed8;
+            border: 1px solid #93c5fd;
+        }
+
+        .badge-secondclass {
+            background: #fef3c7;
+            color: #b45309;
+            border: 1px solid #fde68a;
+        }
+
+        .badge-pass {
+            background: #f1f5f9;
+            color: #475569;
+            border: 1px solid #cbd5e1;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 230px;
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        /* Target CGPA Calculator */
+        .target-box {
+            background: #faf5ff;
+            border: 1px solid #e9d5ff;
+            border-radius: 10px;
+            padding: 1.25rem;
+            margin-top: 1.5rem;
+        }
+
+        .target-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #6b21a8;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .target-inputs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .target-output {
+            background: white;
+            border: 1px dashed #c084fc;
+            padding: 0.85rem;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            color: #581c87;
+        }
+
+        .target-output-highlight {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #7e22ce;
+        }
+
+        /* Quick Converter Widget */
+        .converter-card {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .converter-header {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #166534;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .converter-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            align-items: end;
+        }
+
+        @media (max-width: 600px) {
+            .converter-form {
+                grid-template-columns: 1fr;
+            }
+
+            .target-inputs {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Reference Table */
+        .ref-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        .ref-table th,
+        .ref-table td {
+            padding: 0.65rem 0.85rem;
+            border-bottom: 1px solid #e2e8f0;
+            text-align: left;
+        }
+
+        .ref-table th {
+            background: #f8fafc;
+            font-weight: 700;
+        }
+
+        /* FAQ Accordion */
+        .faq-item {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin-bottom: 0.75rem;
+            background: white;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.1rem 1.25rem;
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--text-dark);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+            transition: background-color 0.2s;
+        }
+
+        .faq-question:hover {
+            background-color: #f8fafc;
+        }
+
+        .faq-answer {
+            padding: 0 1.25rem 1.1rem;
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            display: none;
+            border-top: 1px solid #f1f5f9;
+        }
+
+        .faq-answer.show {
+            display: block;
+        }
+
+        /* Mobile Responsive Enhancements */
+        @media (max-width: 992px) {
+            .calc-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .right-col .card[style*="sticky"] {
+                position: static !important;
+                top: auto !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-banner {
+                padding: 2.25rem 0 2.5rem;
+            }
+
+            .hero-title {
+                font-size: 1.65rem;
+                line-height: 1.25;
+            }
+
+            .hero-subtitle {
+                font-size: 0.95rem;
+                margin-bottom: 1.2rem;
+            }
+
+            .preset-container {
+                margin-top: 1rem;
+                padding: 1rem;
+            }
+
+            .preset-header {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0.75rem;
+            }
+
+            .preset-buttons {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.5rem;
+                width: 100%;
+            }
+
+            .btn-preset {
+                width: 100%;
+                text-align: center;
+                justify-content: center;
+                padding: 0.55rem 0.4rem;
+                font-size: 0.8rem;
+            }
+
+            .card {
+                padding: 1.25rem;
+                margin-bottom: 1.25rem;
+            }
+
+            .card-title {
+                font-size: 1.1rem;
+            }
+
+            .result-cgpa-val {
+                font-size: 2.5rem;
+            }
+
+            .metric-val {
+                font-size: 1.3rem;
+            }
+
+            .chart-container {
+                height: 190px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                padding: 0 0.85rem;
+            }
+
+            .section {
+                padding: 1.75rem 0;
+            }
+
+            .hero-title {
+                font-size: 1.4rem;
+            }
+
+            .hero-badges {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0.4rem;
+            }
+
+            .badge-pill {
+                justify-content: center;
+                font-size: 0.8rem;
+            }
+
+            .calc-table th,
+            .calc-table td {
+                padding: 0.5rem 0.35rem;
+                font-size: 0.825rem;
+                white-space: nowrap;
+            }
+
+            .input-control {
+                font-size: 16px; /* Prevents mobile Safari auto-zoom */
+                padding: 0.5rem 0.4rem;
+            }
+
+            .table-actions {
+                flex-direction: column;
+            }
+
+            .table-actions .btn {
+                width: 100%;
+            }
+
+            .metrics-grid {
+                grid-template-columns: 1fr;
+                gap: 0.75rem;
+            }
+
+            .converter-form,
+            .target-inputs {
+                grid-template-columns: 1fr;
+            }
+
+            .faq-question {
+                font-size: 0.95rem;
+                padding: 0.9rem 1rem;
+            }
+
+            .faq-answer {
+                font-size: 0.875rem;
+                padding: 0 1rem 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Shared Site Header (Injected by common.js) -->
+    <header id="siteHeader"></header>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        <div class="container">
+            <h1 class="hero-title">CGPA Calculator &amp; Percentage Converter</h1>
+            <p class="hero-subtitle">
+                Accurately calculate your Cumulative Grade Point Average (CGPA), convert CGPA to equivalent percentage,
+                plan target SGPA for upcoming semesters, and analyze your academic standing.
+            </p>
+            <div class="hero-badges">
+                <span class="badge-pill"><i class="fas fa-check-circle"></i> 10-Point &amp; 4-Point Scales</span>
+                <span class="badge-pill"><i class="fas fa-sliders-h"></i> Universal Grading Scale Presets</span>
+                <span class="badge-pill"><i class="fas fa-calculator"></i> Target CGPA Planner</span>
+                <span class="badge-pill"><i class="fas fa-chart-line"></i> Semester Trend Graph</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="container">
+        <!-- Grading Scheme Preset Selector Bar -->
+        <div class="preset-container">
+            <div class="preset-header">
+                <div class="preset-title">
+                    <i class="fas fa-sliders-h" style="color: var(--primary-color);"></i>
+                    <span>Select Grading Scale Scheme:</span>
+                </div>
+                <div class="preset-buttons" id="presetButtons">
+                    <button type="button" class="btn-preset active" onclick="applyPreset('standard_10')">10-Point Scale
+                        (× 10)</button>
+                    <button type="button" class="btn-preset" onclick="applyPreset('scale_95')">10-Point Scale (×
+                        9.5)</button>
+                    <button type="button" class="btn-preset" onclick="applyPreset('gpa_4')">4.0 GPA Scale</button>
+                    <button type="button" class="btn-preset" onclick="applyPreset('scale_5')">5.0 Scale</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Calculator & Results Grid -->
+        <div class="calc-grid">
+            <!-- Left Column: Input Table -->
+            <div class="left-col">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <h2 class="card-title">
+                                <i class="fas fa-list-ol" style="color: var(--primary-color);"></i>
+                                Semester SGPA &amp; Credits Input
+                            </h2>
+                            <p class="card-subtitle">Enter your SGPA/GPA and earned credits for each semester.</p>
+                        </div>
+                        <div>
+                            <span id="savedIndicator"
+                                style="font-size: 0.8rem; color: #10b981; font-weight: 600; display: none;">
+                                <i class="fas fa-check"></i> Auto-saved
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="calc-table" id="cgpaTable">
+                            <thead>
+                                <tr>
+                                    <th style="width: 25%;">Semester</th>
+                                    <th style="width: 30%;">SGPA / GPA</th>
+                                    <th style="width: 25%;">Credits</th>
+                                    <th style="width: 20%; text-align: center;">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="semesterRows">
+                                <!-- Dynamic Rows Generated by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="table-actions">
+                        <button type="button" class="btn btn-primary" onclick="addSemesterRow()">
+                            <i class="fas fa-plus"></i> Add Semester
+                        </button>
+                        <button type="button" class="btn btn-outline" onclick="resetCalculator()">
+                            <i class="fas fa-redo"></i> Reset All
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Target CGPA Planner Box -->
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title">
+                                <i class="fas fa-bullseye" style="color: #9333ea;"></i>
+                                Target CGPA Planner
+                            </h3>
+                            <p class="card-subtitle">Calculate required SGPA in future semesters to reach your target
+                                CGPA.</p>
+                        </div>
+                    </div>
+
+                    <div class="target-inputs">
+                        <div>
+                            <label style="font-size: 0.85rem; font-weight: 600; color: #475569;">Target CGPA</label>
+                            <input type="number" id="targetCgpaInput" class="input-control" placeholder="e.g. 8.50"
+                                step="0.01" min="0" max="10" oninput="calculateTargetSgpa()">
+                        </div>
+                        <div>
+                            <label style="font-size: 0.85rem; font-weight: 600; color: #475569;">Remaining
+                                Semesters</label>
+                            <input type="number" id="remainingSemestersInput" class="input-control" placeholder="e.g. 2"
+                                step="1" min="1" max="8" value="2" oninput="calculateTargetSgpa()">
+                        </div>
+                    </div>
+
+                    <div class="target-output" id="targetResultBox">
+                        Enter your target CGPA above to see the required average SGPA for remaining semesters.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Results & Analytics -->
+            <div class="right-col">
+                <!-- Primary CGPA Summary Card -->
+                <div class="card" style="position: sticky; top: 90px;">
+                    <div class="card-header">
+                        <h2 class="card-title">
+                            <i class="fas fa-poll" style="color: var(--primary-color);"></i>
+                            CGPA &amp; Percentage Result
+                        </h2>
+                    </div>
+
+                    <div class="result-highlight-box">
+                        <div class="result-label">Cumulative CGPA</div>
+                        <div class="result-cgpa-val" id="displayCgpa">0.00</div>
+                        <div id="divisionBadgeContainer">
+                            <span class="standing-badge badge-pass" id="standingBadge">Enter semester data</span>
+                        </div>
+                    </div>
+
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-val" id="displayPercentage">0.00%</div>
+                            <div class="metric-title">Equivalent Percentage</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-val" id="displayTotalCredits">0</div>
+                            <div class="metric-title">Total Earned Credits</div>
+                        </div>
+                    </div>
+
+                    <div style="font-size: 0.85rem; color: #64748b; background: #f8fafc; padding: 0.6rem 0.85rem; border-radius: 6px; margin-bottom: 1rem; border: 1px dashed #cbd5e1;"
+                        id="formulaNotice">
+                        <strong>Formula Used:</strong> Percentage (%) = CGPA × 10
+                    </div>
+
+                    <!-- Action buttons -->
+                    <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1rem;">
+                        <button type="button" class="btn btn-outline" style="flex: 1; font-size: 0.85rem;"
+                            onclick="copyResultSummary()">
+                            <i class="fas fa-copy"></i> Copy Result
+                        </button>
+                        <button type="button" class="btn btn-outline" style="flex: 1; font-size: 0.85rem;"
+                            onclick="window.print()">
+                            <i class="fas fa-print"></i> Print / PDF
+                        </button>
+                    </div>
+
+                    <!-- Semester Progress Chart -->
+                    <div>
+                        <h4
+                            style="font-size: 0.95rem; font-weight: 700; color: #334155; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.4rem;">
+                            <i class="fas fa-chart-area" style="color: var(--primary-color);"></i>
+                            Semester Progression Graph
+                        </h4>
+                        <div class="chart-container">
+                            <canvas id="cgpaChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick CGPA to Percentage Standalone Converter Section -->
+        <section class="section" style="padding-top: 1rem;">
+            <div class="card converter-card">
+                <div class="converter-header">
+                    <i class="fas fa-calculator"></i>
+                    <span>Quick CGPA to Percentage Standalone Converter</span>
+                </div>
+                <div class="converter-form">
+                    <div>
+                        <label
+                            style="font-size: 0.85rem; font-weight: 600; color: #14532d; display: block; margin-bottom: 0.3rem;">Your
+                            CGPA Score</label>
+                        <input type="number" id="quickCgpaInput" class="input-control"
+                            placeholder="Enter CGPA (e.g. 8.25)" step="0.01" min="0" max="10"
+                            oninput="runQuickConversion()">
+                    </div>
+                    <div>
+                        <label
+                            style="font-size: 0.85rem; font-weight: 600; color: #14532d; display: block; margin-bottom: 0.3rem;">Formula
+                            / Multiplier</label>
+                        <select id="quickFormulaSelect" class="input-control" onchange="runQuickConversion()">
+                            <option value="10">Standard 10x (Percentage = CGPA × 10)</option>
+                            <option value="9.5">Standard 9.5x (Percentage = CGPA × 9.5)</option>
+                            <option value="offset10">Standard Offset Formula (Percentage = (CGPA - 0.75) × 10)</option>
+                            <option value="25">4.0 GPA Scale (Percentage = GPA × 25)</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="quickResultDisplay"
+                    style="margin-top: 1.25rem; font-size: 1.3rem; font-weight: 800; color: #15803d; text-align: center; background: white; padding: 1rem; border-radius: 8px; border: 1px solid #86efac;">
+                    Result: <span id="quickPercentageVal">0.00%</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grading System Reference Table Section -->
+        <section class="section" style="padding-top: 0;">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">
+                        <i class="fas fa-table" style="color: var(--primary-color);"></i>
+                        Standard 10-Point Choice Based Credit System (CBCS) Grade Matrix
+                    </h3>
+                </div>
+                <div class="table-responsive">
+                    <table class="ref-table">
+                        <thead>
+                            <tr>
+                                <th>Letter Grade</th>
+                                <th>Description</th>
+                                <th>Grade Point (GP)</th>
+                                <th>Marks Range (%)</th>
+                                <th>Division Awarded</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong style="color: #15803d;">O</strong></td>
+                                <td>Outstanding</td>
+                                <td>10</td>
+                                <td>90% - 100%</td>
+                                <td>First Class with Distinction</td>
+                            </tr>
+                            <tr>
+                                <td><strong style="color: #166534;">A+</strong></td>
+                                <td>Excellent</td>
+                                <td>9</td>
+                                <td>80% - 89%</td>
+                                <td>First Class with Distinction</td>
+                            </tr>
+                            <tr>
+                                <td><strong style="color: #1d4ed8;">A</strong></td>
+                                <td>Very Good</td>
+                                <td>8</td>
+                                <td>70% - 79%</td>
+                                <td>First Class</td>
+                            </tr>
+                            <tr>
+                                <td><strong style="color: #2563eb;">B+</strong></td>
+                                <td>Good</td>
+                                <td>7</td>
+                                <td>60% - 69%</td>
+                                <td>First Class</td>
+                            </tr>
+                            <tr>
+                                <td><strong style="color: #d97706;">B</strong></td>
+                                <td>Above Average</td>
+                                <td>6</td>
+                                <td>50% - 59%</td>
+                                <td>Second Class</td>
+                            </tr>
+                            <tr>
+                                <td><strong style="color: #b45309;">C</strong></td>
+                                <td>Average</td>
+                                <td>5</td>
+                                <td>45% - 49%</td>
+                                <td>Pass Class</td>
+                            </tr>
+                            <tr>
+                                <td><strong style="color: #64748b;">P</strong></td>
+                                <td>Pass</td>
+                                <td>4</td>
+                                <td>40% - 44%</td>
+                                <td>Pass Class</td>
+                            </tr>
+                            <tr>
+                                <td><strong style="color: #dc2626;">F / AB</strong></td>
+                                <td>Fail / Absent</td>
+                                <td>0</td>
+                                <td>Below 40%</td>
+                                <td>Fail / Re-appear</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section" style="padding-top: 0;">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">
+                        <i class="fas fa-question-circle" style="color: var(--primary-color);"></i>
+                        Frequently Asked Questions (FAQs)
+                    </h3>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>How is Cumulative CGPA calculated from Semester SGPAs?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Cumulative CGPA is computed by multiplying each semester's SGPA by its total earned credits,
+                        adding all credit-weighted points together, and dividing by the total cumulative credits earned
+                        across all completed semesters:
+                        <br>
+                        <code>CGPA = Σ(SGPA × Semester Credits) / Total Cumulative Credits</code>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>What is the difference between SGPA and CGPA?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>SGPA (Semester Grade Point Average)</strong> measures performance in a single specific
+                        academic semester.
+                        <strong>CGPA (Cumulative Grade Point Average)</strong> represents the overall academic
+                        performance accumulated across all completed semesters from Semester 1 up to the current term.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>How do I convert CGPA to Equivalent Percentage?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Under standard 10-point guidelines, Equivalent Percentage = <strong>CGPA × 10</strong>. For
+                        example, a CGPA of 8.40 equals 84.00%. Under 9.5x schemes, <code>Percentage = CGPA × 9.5</code>,
+                        or offset schemes use <code>Percentage = (CGPA - 0.75) × 10</code>. You can select your
+                        preferred grading scheme preset above.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>What CGPA qualifies for First Class with Distinction?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        In most academic grading systems, a CGPA of <strong>7.50 or above</strong> qualifies a student
+                        for <em>First Class with Distinction</em>, provided all subjects were passed in the first
+                        attempt without backlogs. A CGPA between 6.50 and 7.49 is awarded <em>First Class</em>.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Shared Footer (Injected by common.js) -->
+    <footer id="siteFooter"></footer>
+
+    <!-- Common JS Script -->
+    <script src="./common.js"></script>
+
+    <!-- Page Specific Script -->
+    <script>
+        let currentPreset = 'standard_10';
+        let chartInstance = null;
+
+        const presets = {
+            standard_10: {
+                name: '10-Point Scale (× 10)',
+                formulaMultiplier: 10,
+                formulaType: 'multiplier',
+                maxGpa: 10,
+                defaultCredits: [20, 20, 20, 20, 20, 20, 20, 20]
+            },
+            scale_95: {
+                name: '10-Point Scale (× 9.5)',
+                formulaMultiplier: 9.5,
+                formulaType: 'multiplier',
+                maxGpa: 10,
+                defaultCredits: [20, 20, 20, 20, 20, 20, 20, 20]
+            },
+            gpa_4: {
+                name: '4.0 GPA Scale',
+                formulaMultiplier: 25,
+                formulaType: 'multiplier',
+                maxGpa: 4.0,
+                defaultCredits: [15, 15, 15, 15, 15, 15, 15, 15]
+            },
+            scale_5: {
+                name: '5.0 Scale',
+                formulaMultiplier: 20,
+                formulaType: 'multiplier',
+                maxGpa: 5.0,
+                defaultCredits: [20, 20, 20, 20, 20, 20, 20, 20]
+            }
+        };
+
+        // Initialize Page
+        document.addEventListener('DOMContentLoaded', () => {
+            loadSavedData();
+            initChart();
+            runQuickConversion();
+        });
+
+        function applyPreset(presetKey) {
+            currentPreset = presetKey;
+
+            // Update preset active button state
+            const btns = document.querySelectorAll('#presetButtons .btn-preset');
+            btns.forEach(b => b.classList.remove('active'));
+            if (event && event.target) {
+                event.target.classList.add('active');
+            }
+
+            const p = presets[presetKey];
+
+            // Update Notice
+            const notice = document.getElementById('formulaNotice');
+            notice.innerHTML = `<strong>Formula Used:</strong> Percentage (%) = CGPA × ${p.formulaMultiplier} (${p.name})`;
+
+            // If rows are default or empty, set default credits
+            const rows = document.querySelectorAll('#semesterRows tr');
+            if (rows.length === 0) {
+                initDefaultRows();
+            } else {
+                rows.forEach((tr, index) => {
+                    const creditInput = tr.querySelector('.credit-input');
+                    if (creditInput && p.defaultCredits[index]) {
+                        creditInput.value = p.defaultCredits[index];
+                    }
+                });
+            }
+
+            calculateCgpa();
+        }
+
+        function initDefaultRows() {
+            const tbody = document.getElementById('semesterRows');
+            tbody.innerHTML = '';
+            const p = presets[currentPreset];
+
+            for (let i = 1; i <= 6; i++) {
+                const tr = document.createElement('tr');
+                const defaultCredit = p.defaultCredits[i - 1] || 20;
+                tr.innerHTML = `
+                    <td>
+                        <strong style="color: #334155;">Semester ${i}</strong>
+                    </td>
+                    <td>
+                        <input type="number" class="input-control sgpa-input" placeholder="0.00 - ${p.maxGpa}" step="0.01" min="0" max="${p.maxGpa}" oninput="calculateCgpa()">
+                    </td>
+                    <td>
+                        <input type="number" class="input-control credit-input" value="${defaultCredit}" step="0.5" min="1" max="40" oninput="calculateCgpa()">
+                    </td>
+                    <td style="text-align: center;">
+                        <button type="button" class="btn-icon-danger" onclick="removeRow(this)" aria-label="Remove Semester">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            }
+        }
+
+        function addSemesterRow() {
+            const tbody = document.getElementById('semesterRows');
+            const rowCount = tbody.children.length + 1;
+            const p = presets[currentPreset];
+            const defaultCredit = p.defaultCredits[rowCount - 1] || 20;
+
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td>
+                    <strong style="color: #334155;">Semester ${rowCount}</strong>
+                </td>
+                <td>
+                    <input type="number" class="input-control sgpa-input" placeholder="0.00 - ${p.maxGpa}" step="0.01" min="0" max="${p.maxGpa}" oninput="calculateCgpa()">
+                </td>
+                <td>
+                    <input type="number" class="input-control credit-input" value="${defaultCredit}" step="0.5" min="1" max="40" oninput="calculateCgpa()">
+                </td>
+                <td style="text-align: center;">
+                    <button type="button" class="btn-icon-danger" onclick="removeRow(this)" aria-label="Remove Semester">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </td>
+            `;
+            tbody.appendChild(tr);
+            calculateCgpa();
+        }
+
+        function removeRow(btn) {
+            const tbody = document.getElementById('semesterRows');
+            if (tbody.children.length <= 1) {
+                alert('At least one semester row must remain.');
+                return;
+            }
+            btn.closest('tr').remove();
+
+            // Re-label semesters
+            Array.from(tbody.children).forEach((tr, index) => {
+                const label = tr.querySelector('td strong');
+                if (label) label.textContent = `Semester ${index + 1}`;
+            });
+
+            calculateCgpa();
+        }
+
+        function calculateCgpa() {
+            const rows = document.querySelectorAll('#semesterRows tr');
+            let totalWeightedPoints = 0;
+            let totalCredits = 0;
+
+            const labels = [];
+            const sgpaList = [];
+            const cgpaTrend = [];
+
+            let runningWeightedPoints = 0;
+            let runningCredits = 0;
+
+            rows.forEach((tr, index) => {
+                const sgpaVal = parseFloat(tr.querySelector('.sgpa-input').value);
+                const creditVal = parseFloat(tr.querySelector('.credit-input').value);
+
+                labels.push(`Sem ${index + 1}`);
+
+                if (!isNaN(sgpaVal) && sgpaVal >= 0 && !isNaN(creditVal) && creditVal > 0) {
+                    const weighted = sgpaVal * creditVal;
+                    totalWeightedPoints += weighted;
+                    totalCredits += creditVal;
+
+                    runningWeightedPoints += weighted;
+                    runningCredits += creditVal;
+
+                    sgpaList.push(sgpaVal);
+                    cgpaTrend.push(parseFloat((runningWeightedPoints / runningCredits).toFixed(2)));
+                } else {
+                    sgpaList.push(null);
+                    cgpaTrend.push(runningCredits > 0 ? parseFloat((runningWeightedPoints / runningCredits).toFixed(2)) : null);
+                }
+            });
+
+            const cgpa = totalCredits > 0 ? (totalWeightedPoints / totalCredits) : 0;
+            const p = presets[currentPreset];
+
+            let percentage = cgpa * p.formulaMultiplier;
+            if (percentage < 0) percentage = 0;
+
+            // Update UI Displays
+            document.getElementById('displayCgpa').textContent = cgpa.toFixed(2);
+            document.getElementById('displayPercentage').textContent = percentage.toFixed(2) + '%';
+            document.getElementById('displayTotalCredits').textContent = totalCredits.toFixed(1);
+
+            // Standing Badge
+            const badge = document.getElementById('standingBadge');
+            const normalizedCgpa = (cgpa / p.maxGpa) * 10;
+            if (cgpa === 0) {
+                badge.className = 'standing-badge badge-pass';
+                badge.textContent = 'Enter semester SGPA';
+            } else if (normalizedCgpa >= 7.5) {
+                badge.className = 'standing-badge badge-distinction';
+                badge.textContent = 'First Class with Distinction';
+            } else if (normalizedCgpa >= 6.5) {
+                badge.className = 'standing-badge badge-firstclass';
+                badge.textContent = 'First Class';
+            } else if (normalizedCgpa >= 5.5) {
+                badge.className = 'standing-badge badge-secondclass';
+                badge.textContent = 'Second Class';
+            } else {
+                badge.className = 'standing-badge badge-pass';
+                badge.textContent = 'Pass Class';
+            }
+
+            // Update Chart
+            updateChart(labels, sgpaList, cgpaTrend);
+
+            // Target calculation trigger
+            calculateTargetSgpa();
+
+            // Save state to localStorage
+            saveState();
+        }
+
+        function calculateTargetSgpa() {
+            const currentCgpa = parseFloat(document.getElementById('displayCgpa').textContent) || 0;
+            const currentCredits = parseFloat(document.getElementById('displayTotalCredits').textContent) || 0;
+
+            const targetCgpa = parseFloat(document.getElementById('targetCgpaInput').value);
+            const remainingSem = parseInt(document.getElementById('remainingSemestersInput').value) || 0;
+
+            const output = document.getElementById('targetResultBox');
+
+            if (isNaN(targetCgpa) || remainingSem <= 0) {
+                output.innerHTML = 'Enter your target CGPA above to see the required average SGPA.';
+                return;
+            }
+
+            if (currentCredits === 0) {
+                output.innerHTML = `To achieve a CGPA of <strong>${targetCgpa.toFixed(2)}</strong>, you must maintain an average SGPA of <span class="target-output-highlight">${targetCgpa.toFixed(2)}</span> across the remaining ${remainingSem} semesters.`;
+                return;
+            }
+
+            const p = presets[currentPreset];
+            const estCreditPerSem = 20; // standard average credit
+            const futureCredits = remainingSem * estCreditPerSem;
+
+            const totalTargetPoints = targetCgpa * (currentCredits + futureCredits);
+            const currentPoints = currentCgpa * currentCredits;
+            const requiredFuturePoints = totalTargetPoints - currentPoints;
+            const reqSgpa = requiredFuturePoints / futureCredits;
+
+            if (reqSgpa > p.maxGpa) {
+                output.innerHTML = `<span style="color: var(--danger-color); font-weight: 700;">Mathematically Unachievable!</span><br>Required SGPA (${reqSgpa.toFixed(2)}) exceeds maximum scale limit of ${p.maxGpa}.`;
+            } else if (reqSgpa < 0) {
+                output.innerHTML = `<span style="color: #15803d; font-weight: 700;">Target Already Exceeded!</span><br>Your current CGPA (${currentCgpa.toFixed(2)}) is higher than target ${targetCgpa.toFixed(2)}.`;
+            } else {
+                output.innerHTML = `To reach target CGPA of <strong>${targetCgpa.toFixed(2)}</strong>, you need an average SGPA of <span class="target-output-highlight">${reqSgpa.toFixed(2)}</span> in each of the remaining ${remainingSem} semester(s).`;
+            }
+        }
+
+        function runQuickConversion() {
+            const inputVal = parseFloat(document.getElementById('quickCgpaInput').value);
+            const formula = document.getElementById('quickFormulaSelect').value;
+            const display = document.getElementById('quickPercentageVal');
+
+            if (isNaN(inputVal) || inputVal < 0) {
+                display.textContent = '0.00%';
+                return;
+            }
+
+            let result = 0;
+            if (formula === 'offset10') {
+                result = (inputVal - 0.75) * 10;
+            } else {
+                const mult = parseFloat(formula) || 10;
+                result = inputVal * mult;
+            }
+
+            if (result < 0) result = 0;
+            display.textContent = result.toFixed(2) + '%';
+        }
+
+        function initChart() {
+            const ctx = document.getElementById('cgpaChart').getContext('2d');
+            chartInstance = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Sem 1', 'Sem 2', 'Sem 3', 'Sem 4', 'Sem 5', 'Sem 6'],
+                    datasets: [
+                        {
+                            label: 'Semester SGPA',
+                            data: [0, 0, 0, 0, 0, 0],
+                            borderColor: '#0067b8',
+                            backgroundColor: 'rgba(0, 103, 184, 0.1)',
+                            borderWidth: 2,
+                            tension: 0.3,
+                            fill: true
+                        },
+                        {
+                            label: 'Cumulative CGPA',
+                            data: [0, 0, 0, 0, 0, 0],
+                            borderColor: '#10b981',
+                            borderDash: [5, 5],
+                            borderWidth: 2,
+                            tension: 0.3,
+                            fill: false
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 10,
+                            ticks: { stepSize: 2 }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: { boxWidth: 12, font: { family: 'Inter', size: 11 } }
+                        }
+                    }
+                }
+            });
+        }
+
+        function updateChart(labels, sgpaList, cgpaTrend) {
+            if (!chartInstance) return;
+            chartInstance.data.labels = labels;
+            chartInstance.data.datasets[0].data = sgpaList;
+            chartInstance.data.datasets[1].data = cgpaTrend;
+            chartInstance.update();
+        }
+
+        function resetCalculator() {
+            if (confirm('Are you sure you want to clear all semester data?')) {
+                localStorage.removeItem('famral_cgpa_data');
+                initDefaultRows();
+                calculateCgpa();
+            }
+        }
+
+        function copyResultSummary() {
+            const cgpa = document.getElementById('displayCgpa').textContent;
+            const pct = document.getElementById('displayPercentage').textContent;
+            const credits = document.getElementById('displayTotalCredits').textContent;
+            const division = document.getElementById('standingBadge').textContent;
+
+            const text = `🎓 Famral Academic CGPA Summary:\n• CGPA: ${cgpa}\n• Equivalent Percentage: ${pct}\n• Total Credits: ${credits}\n• Standing: ${division}\nCalculate yours at: https://tools.famral.com/cgpa-calculator`;
+
+            navigator.clipboard.writeText(text).then(() => {
+                alert('CGPA Summary copied to clipboard!');
+            });
+        }
+
+        function saveState() {
+            const rows = document.querySelectorAll('#semesterRows tr');
+            const data = [];
+            rows.forEach(tr => {
+                data.push({
+                    sgpa: tr.querySelector('.sgpa-input').value,
+                    credit: tr.querySelector('.credit-input').value
+                });
+            });
+
+            const state = {
+                preset: currentPreset,
+                rows: data,
+                targetCgpa: document.getElementById('targetCgpaInput').value,
+                remainingSem: document.getElementById('remainingSemestersInput').value
+            };
+
+            localStorage.setItem('famral_cgpa_data', JSON.stringify(state));
+
+            const indicator = document.getElementById('savedIndicator');
+            if (indicator) {
+                indicator.style.display = 'inline-block';
+                setTimeout(() => { indicator.style.display = 'none'; }, 2000);
+            }
+        }
+
+        function loadSavedData() {
+            const saved = localStorage.getItem('famral_cgpa_data');
+            if (!saved) {
+                initDefaultRows();
+                calculateCgpa();
+                return;
+            }
+
+            try {
+                const state = JSON.parse(saved);
+                if (state.preset && presets[state.preset]) currentPreset = state.preset;
+
+                const tbody = document.getElementById('semesterRows');
+                tbody.innerHTML = '';
+
+                if (state.rows && state.rows.length > 0) {
+                    const p = presets[currentPreset] || presets.standard_10;
+                    state.rows.forEach((r, i) => {
+                        const tr = document.createElement('tr');
+                        tr.innerHTML = `
+                            <td>
+                                <strong style="color: #334155;">Semester ${i + 1}</strong>
+                            </td>
+                            <td>
+                                <input type="number" class="input-control sgpa-input" value="${r.sgpa || ''}" placeholder="0.00 - ${p.maxGpa}" step="0.01" min="0" max="${p.maxGpa}" oninput="calculateCgpa()">
+                            </td>
+                            <td>
+                                <input type="number" class="input-control credit-input" value="${r.credit || 20}" step="0.5" min="1" max="40" oninput="calculateCgpa()">
+                            </td>
+                            <td style="text-align: center;">
+                                <button type="button" class="btn-icon-danger" onclick="removeRow(this)" aria-label="Remove Semester">
+                                    <i class="fas fa-trash-alt"></i>
+                                </button>
+                            </td>
+                        `;
+                        tbody.appendChild(tr);
+                    });
+                } else {
+                    initDefaultRows();
+                }
+
+                if (state.targetCgpa) document.getElementById('targetCgpaInput').value = state.targetCgpa;
+                if (state.remainingSem) document.getElementById('remainingSemestersInput').value = state.remainingSem;
+
+                calculateCgpa();
+            } catch (e) {
+                initDefaultRows();
+                calculateCgpa();
+            }
+        }
+    </script>
+</body>
+
+</html>
