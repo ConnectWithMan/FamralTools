@@ -324,7 +324,7 @@ function renderHeader() {
                             </a>
                         </div>
                     </div>
-
+                    <a href="/image" class="nav-link">Image Tools</a>
                     <a href="https://www.famral.com/college-predictor" target="_blank" class="nav-link">College Predictor</a>
                 </div>
             </div>
@@ -340,9 +340,9 @@ function renderFooter() {
     const footerHTML = `
         <div class="container">
             <div class="footer-links-grid">
-                <!-- Column 1: University Tools -->
+                <!-- Column 1: Academic Tools -->
                 <div class="footer-column">
-                    <h4>University Tools</h4>
+                    <h4>Academic Tools</h4>
                     <ul>
                         <li><a href="/rtu-sgpa-calculator">RTU SGPA Calculator</a></li>
                         <li><a href="/rtu-cgpa-calculator">RTU CGPA Calculator</a></li>
@@ -353,13 +353,16 @@ function renderFooter() {
                     </ul>
                 </div>
 
-                <!-- Column 2: Academic Predictors -->
+                <!-- Column 2: College Predictors -->
                 <div class="footer-column">
-                    <h4>Academic Predictors</h4>
+                    <h4>College Predictors</h4>
                     <ul>
-                        <li><a href="https://www.famral.com/icar-college-predictor" target="_blank">ICAR College Predictor</a></li>
                         <li><a href="https://www.famral.com/jee-main-college-predictor" target="_blank">JEE Main Predictor</a></li>
-                        <li><a href="https://www.famral.com/about" target="_blank">College Rank Cutoffs</a></li>
+                        <li><a href="https://www.famral.com/mht-cet-college-predictor" target="_blank">MHT CET Predictor</a></li>
+                        <li><a href="https://www.famral.com/tnea-college-predictor" target="_blank">TNEA College Predictor</a></li>
+                        <li><a href="https://www.famral.com/wbjee-college-predictor" target="_blank">WBJEE College Predictor</a></li>
+                        <li><a href="https://www.famral.com/icar-college-predictor" target="_blank">ICAR College Predictor</a></li>
+                        <li><a href="https://www.famral.com/kcet-college-predictor" target="_blank">KCET College Predictor</a></li>
                     </ul>
                 </div>
 
