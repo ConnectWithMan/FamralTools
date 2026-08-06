@@ -1,0 +1,2298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SGPA Calculator - Calculate Semester SGPA &amp; Percentage | Famral</title>
+    <meta name="description"
+        content="Free SGPA Calculator & Percentage Converter for college and university students. Calculate semester SGPA using grades or marks, plan target marks, convert SGPA to percentage, and view grade breakdown charts." />
+    <meta name="keywords"
+        content="SGPA calculator, calculate SGPA, SGPA to percentage calculator, semester grade point average calculator, college SGPA calculator, SGPA formula, 10 point SGPA calculator, 4 point GPA calculator, target SGPA planner" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="author" content="Famral" />
+    <meta name="theme-color" content="#0067b8" />
+    <meta name="geo.region" content="IN" />
+    <meta name="geo.placename" content="India" />
+    <link rel="icon" type="image/png" href="./favicon.ico">
+    <link rel="canonical" href="https://tools.famral.com/sgpa-calculator" />
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Famral" />
+    <meta property="og:url" content="https://tools.famral.com/sgpa-calculator" />
+    <meta property="og:title" content="Universal SGPA Calculator &amp; Percentage Converter | Famral" />
+    <meta property="og:description"
+        content="Calculate Semester SGPA and equivalent percentage easily. Supports 10-point scale, 4.0 GPA scale, 5.0 scale, marks-to-grade converter, target SGPA planner, and visual grade distribution charts." />
+    <meta property="og:image" content="https://tools.famral.com/tools.png" />
+    <meta property="og:locale" content="en_IN" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Universal SGPA Calculator &amp; Percentage Converter | Famral" />
+    <meta name="twitter:description"
+        content="Free online SGPA Calculator with percentage conversion, target grade planner, and visual subject breakdown charts." />
+    <meta name="twitter:image" content="https://tools.famral.com/tools.png" />
+
+    <!-- FontAwesome & Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    </noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7876432493491415"
+        crossorigin="anonymous"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-22NPRLMEYS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-22NPRLMEYS');
+    </script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Structured Data (JSON-LD): WebApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "SGPA Calculator & Percentage Converter",
+      "url": "https://tools.famral.com/sgpa-calculator",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "All",
+      "description": "Calculate Semester Grade Point Average (SGPA), convert SGPA to percentage, plan required target grades, and predict cumulative CGPA impact.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Famral",
+        "url": "https://www.famral.com"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.95",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "3840",
+        "reviewCount": "3490"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "INR"
+      }
+    }
+    </script>
+
+    <!-- Structured Data (JSON-LD): BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tools.famral.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Academic Tools",
+          "item": "https://tools.famral.com/academic"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "SGPA Calculator",
+          "item": "https://tools.famral.com/sgpa-calculator"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Structured Data (JSON-LD): FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is SGPA and how is it calculated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SGPA stands for Semester Grade Point Average. It measures a student's academic performance in a single semester. SGPA is calculated by taking the sum of the product of course credits and grade points earned, divided by the total semester credits: SGPA = Σ(Credit × Grade Point) / Σ(Total Credits)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How to convert SGPA to Percentage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under most 10-point Choice Based Credit Systems (CBCS), Percentage (%) = SGPA × 10. Under 9.5x systems (like AICTE/CBSE standard), Percentage (%) = SGPA × 9.5. Some universities also use offset formulas like (SGPA - 0.75) × 10."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between SGPA and CGPA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SGPA indicates the academic grade point average for a single specific semester, while CGPA (Cumulative Grade Point Average) is the overall average across all completed semesters from year 1 to graduation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I calculate SGPA directly from subject marks instead of letter grades?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Switch the input mode in our calculator to 'Marks / Percentage'. Enter your marks out of 100 for each subject, and the system automatically converts your marks into letter grades and grade points according to standard university cutoff rules."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-dark, #111827);
+            line-height: 1.6;
+            background-color: #f8fafc;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        :root {
+            --primary-color: #0067b8;
+            --primary-hover: #005da6;
+            --text-dark: #111827;
+            --text-light: #4b5563;
+            --border-color: #e5e7eb;
+            --surface-color: #ffffff;
+            --bg-light: #f8fafc;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+        }
+
+        .container {
+            max-width: 1260px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .section {
+            padding: 3rem 0;
+        }
+
+        /* Hero Banner */
+        .hero-banner {
+            background: linear-gradient(135deg, #0067b8 0%, #004279 100%);
+            color: white;
+            padding: 3.5rem 0 4rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-banner::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-subtitle {
+            font-size: 1.15rem;
+            max-width: 780px;
+            margin: 0 auto 1.5rem;
+            color: #e0f2fe;
+            font-weight: 400;
+        }
+
+        .hero-badges {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .badge-pill {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #ffffff;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        /* Controls & Presets Container */
+        .preset-container {
+            background: white;
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-top: -2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+            border: 1px solid var(--border-color);
+            position: relative;
+            z-index: 10;
+        }
+
+        .preset-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .preset-title {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .preset-buttons {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-preset {
+            background: #f1f5f9;
+            border: 1px solid #cbd5e1;
+            color: #334155;
+            padding: 0.45rem 0.85rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn-preset:hover,
+        .btn-preset.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+            box-shadow: 0 4px 12px rgba(0, 103, 184, 0.25);
+        }
+
+        /* Main Grid */
+        .calc-grid {
+            display: grid;
+            grid-template-columns: 7fr 5fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 992px) {
+            .calc-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.75rem;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+            margin-bottom: 2rem;
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1.25rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid #f1f5f9;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .card-subtitle {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-top: 0.2rem;
+        }
+
+        /* Controls Selector Row */
+        .options-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+            background: #f8fafc;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+
+        @media (max-width: 640px) {
+            .options-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .input-group label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #475569;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            display: block;
+            margin-bottom: 0.35rem;
+        }
+
+        .input-control {
+            width: 100%;
+            padding: 0.6rem 0.8rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            font-family: inherit;
+            color: var(--text-dark);
+            transition: border-color 0.2s, box-shadow 0.2s;
+            background: #fff;
+        }
+
+        .input-control:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(0, 103, 184, 0.15);
+        }
+
+        /* Table Styling */
+        .table-responsive {
+            overflow-x: auto;
+            margin-bottom: 1.25rem;
+        }
+
+        .calc-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        .calc-table th {
+            background: #f8fafc;
+            padding: 0.75rem 0.85rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #475569;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .calc-table td {
+            padding: 0.65rem 0.85rem;
+            border-bottom: 1px solid #f1f5f9;
+            vertical-align: middle;
+        }
+
+        .btn-icon-danger {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            color: var(--danger-color);
+            width: 34px;
+            height: 34px;
+            border-radius: 6px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn-icon-danger:hover {
+            background: var(--danger-color);
+            color: white;
+            border-color: var(--danger-color);
+        }
+
+        .table-actions {
+            display: flex;
+            gap: 0.75rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.65rem 1.25rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+            box-shadow: 0 4px 12px rgba(0, 103, 184, 0.3);
+        }
+
+        .btn-outline {
+            background: white;
+            border: 1px solid #cbd5e1;
+            color: #334155;
+        }
+
+        .btn-outline:hover {
+            background: #f8fafc;
+            border-color: #94a3b8;
+        }
+
+        .btn-secondary {
+            background: #e2e8f0;
+            color: #334155;
+        }
+
+        .btn-secondary:hover {
+            background: #cbd5e1;
+        }
+
+        /* Results Card */
+        .result-highlight-box {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            border: 1px solid #bae6fd;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .result-sgpa-val {
+            font-size: 3.2rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            line-height: 1;
+            margin: 0.4rem 0;
+        }
+
+        .result-label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #0369a1;
+            letter-spacing: 0.05em;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .metric-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .metric-val {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .metric-title {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            font-weight: 600;
+            margin-top: 0.2rem;
+        }
+
+        .standing-badge {
+            display: inline-block;
+            padding: 0.45rem 1.2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.875rem;
+            margin-top: 0.5rem;
+        }
+
+        .badge-distinction {
+            background: #dcfce7;
+            color: #15803d;
+            border: 1px solid #86efac;
+        }
+
+        .badge-firstclass {
+            background: #dbeafe;
+            color: #1d4ed8;
+            border: 1px solid #93c5fd;
+        }
+
+        .badge-secondclass {
+            background: #fef3c7;
+            color: #b45309;
+            border: 1px solid #fde68a;
+        }
+
+        .badge-pass {
+            background: #f1f5f9;
+            color: #475569;
+            border: 1px solid #cbd5e1;
+        }
+
+        .badge-fail {
+            background: #fef2f2;
+            color: #dc2626;
+            border: 1px solid #fecaca;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 230px;
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        /* Auxiliary Tools Tabs / Boxes */
+        .tab-box {
+            background: #faf5ff;
+            border: 1px solid #e9d5ff;
+            border-radius: 10px;
+            padding: 1.25rem;
+            margin-top: 1.5rem;
+        }
+
+        .tab-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #6b21a8;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .tab-inputs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .tab-output {
+            background: white;
+            border: 1px dashed #c084fc;
+            padding: 0.85rem;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            color: #581c87;
+        }
+
+        .tab-output-val {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #7e22ce;
+        }
+
+        /* Converter Card */
+        .converter-card {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .converter-header {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #166534;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .converter-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            align-items: end;
+        }
+
+        @media (max-width: 600px) {
+
+            .converter-form,
+            .tab-inputs {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Reference Table */
+        .ref-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        .ref-table th,
+        .ref-table td {
+            padding: 0.65rem 0.85rem;
+            border-bottom: 1px solid #e2e8f0;
+            text-align: left;
+        }
+
+        .ref-table th {
+            background: #f8fafc;
+            font-weight: 700;
+        }
+
+        /* Content Sections & Article */
+        .content-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+            margin-bottom: 2rem;
+        }
+
+        .content-card h2 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .content-card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin: 1.5rem 0 0.75rem;
+        }
+
+        .content-card p {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            font-size: 0.975rem;
+            line-height: 1.7;
+        }
+
+        .formula-display {
+            background: #eff6ff;
+            border-left: 4px solid var(--primary-color);
+            padding: 1.25rem;
+            border-radius: 0 8px 8px 0;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #1e40af;
+            margin: 1.25rem 0;
+            text-align: center;
+        }
+
+        /* FAQ Accordion */
+        .faq-item {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin-bottom: 0.75rem;
+            background: white;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.1rem 1.25rem;
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--text-dark);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+            transition: background-color 0.2s;
+        }
+
+        .faq-question:hover {
+            background-color: #f8fafc;
+        }
+
+        .faq-answer {
+            padding: 0 1.25rem 1.1rem;
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            display: none;
+            border-top: 1px solid #f1f5f9;
+        }
+
+        .faq-answer.show {
+            display: block;
+        }
+
+        /* Popular Tools Link Grid */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.25rem;
+            margin-top: 1.25rem;
+        }
+
+        .tool-link-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 1.25rem;
+            transition: all 0.25 ease;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .tool-link-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+            border-color: var(--primary-color);
+        }
+
+        .tool-icon-box {
+            width: 46px;
+            height: 46px;
+            border-radius: 10px;
+            background: rgba(0, 103, 184, 0.1);
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+
+        .tool-info-title {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--text-dark);
+        }
+
+        .tool-info-desc {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-top: 0.15rem;
+        }
+
+        .mobile-label-span {
+            display: none;
+        }
+
+        /* Mobile Responsive & Small Screen Enhancements */
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        @media (max-width: 992px) {
+            .calc-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .right-col .card[style*="sticky"] {
+                position: static !important;
+                top: auto !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            .hero-banner {
+                padding: 2.25rem 0 2.5rem;
+            }
+
+            .hero-title {
+                font-size: 1.75rem;
+                line-height: 1.25;
+            }
+
+            .hero-subtitle {
+                font-size: 0.95rem;
+                margin-bottom: 1.2rem;
+            }
+
+            .badge-pill {
+                font-size: 0.775rem;
+                padding: 0.35rem 0.75rem;
+            }
+
+            .preset-container {
+                margin-top: 1rem;
+                padding: 1rem;
+            }
+
+            .preset-header {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0.75rem;
+            }
+
+            .preset-buttons {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.4rem;
+                width: 100%;
+            }
+
+            .btn-preset {
+                flex: 1 1 calc(50% - 0.4rem);
+                min-width: 120px;
+                text-align: center;
+                justify-content: center;
+                padding: 0.5rem 0.6rem;
+                font-size: 0.8rem;
+            }
+
+            .card {
+                padding: 1.25rem;
+                margin-bottom: 1.25rem;
+            }
+
+            .card-title {
+                font-size: 1.1rem;
+            }
+
+            .card-subtitle {
+                font-size: 0.8rem;
+            }
+
+            .options-row {
+                grid-template-columns: 1fr;
+                padding: 0.85rem;
+                gap: 0.75rem;
+            }
+
+            .input-control {
+                font-size: 16px;
+                /* Prevents mobile Safari auto-zoom */
+                padding: 0.5rem 0.45rem;
+            }
+
+            .table-actions {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .table-actions .btn {
+                width: 100%;
+            }
+
+            .metrics-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 0.75rem;
+            }
+
+            .converter-form,
+            .tab-inputs {
+                grid-template-columns: 1fr;
+                gap: 0.75rem;
+            }
+
+            .content-card {
+                padding: 1.25rem;
+            }
+
+            .content-card h2 {
+                font-size: 1.25rem;
+            }
+
+            .content-card h3 {
+                font-size: 1.05rem;
+            }
+
+            .formula-display {
+                font-size: 0.95rem;
+                padding: 0.85rem;
+            }
+
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .faq-question {
+                font-size: 0.95rem;
+                padding: 0.9rem 1rem;
+            }
+
+            .faq-answer {
+                font-size: 0.875rem;
+                padding: 0 1rem 0.9rem;
+            }
+        }
+
+        /* Mobile Screen Stacked Cards for Calculator Matrix */
+        @media (max-width: 640px) {
+            .calc-table thead {
+                display: none;
+            }
+
+            .calc-table, 
+            .calc-table tbody, 
+            .calc-table tr, 
+            .calc-table td {
+                display: block;
+                width: 100%;
+            }
+
+            .calc-table tr {
+                background: #ffffff;
+                border: 1px solid #e2e8f0;
+                border-radius: 10px;
+                padding: 0.85rem;
+                margin-bottom: 0.85rem;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+                position: relative;
+            }
+
+            .calc-table td {
+                padding: 0.4rem 0;
+                border: none;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 0.5rem;
+            }
+
+            .calc-table td[data-label="Course Name"] {
+                display: block;
+                padding-bottom: 0.5rem;
+                margin-bottom: 0.4rem;
+                border-bottom: 1px dashed #e2e8f0;
+            }
+
+            .calc-table td[data-label="Action"] {
+                justify-content: flex-end;
+                padding-top: 0.5rem;
+                margin-top: 0.4rem;
+                border-top: 1px dashed #e2e8f0;
+            }
+
+            .mobile-label-span {
+                display: inline-block !important;
+                font-weight: 700;
+                font-size: 0.8rem;
+                color: #475569;
+                text-transform: uppercase;
+                letter-spacing: 0.02em;
+            }
+
+            .calc-table td .input-control {
+                width: auto;
+                flex: 1;
+                max-width: 65%;
+            }
+
+            .calc-table td[data-label="Course Name"] .input-control {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                padding: 0 0.75rem;
+            }
+
+            .hero-title {
+                font-size: 1.45rem;
+            }
+
+            .hero-subtitle {
+                font-size: 0.875rem;
+            }
+
+            .result-sgpa-val {
+                font-size: 2.5rem;
+            }
+
+            .result-highlight-box {
+                padding: 1rem 0.75rem;
+            }
+
+            .metrics-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .standing-badge {
+                font-size: 0.8rem;
+                padding: 0.35rem 0.85rem;
+            }
+
+            .card {
+                padding: 1rem 0.75rem;
+                border-radius: 10px;
+            }
+
+            .btn-preset {
+                flex: 1 1 100%;
+                width: 100%;
+            }
+
+            .table-responsive {
+                border-radius: 6px;
+                border: none;
+            }
+
+            .ref-table {
+                min-width: 440px;
+            }
+
+            .chart-container {
+                height: 200px;
+            }
+
+            .tool-link-card {
+                padding: 1rem;
+            }
+
+            .tool-icon-box {
+                width: 38px;
+                height: 38px;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .hero-banner {
+                padding: 1.75rem 0 2rem;
+            }
+
+            .hero-title {
+                font-size: 1.3rem;
+            }
+
+            .hero-badges {
+                gap: 0.35rem;
+            }
+
+            .badge-pill {
+                font-size: 0.725rem;
+                padding: 0.3rem 0.6rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Shared Header -->
+    <header id="siteHeader"></header>
+
+    <!-- Hero Section -->
+    <section class="hero-banner">
+        <div class="container">
+            <h1 class="hero-title">Universal SGPA Calculator &amp; Percentage Converter</h1>
+            <p class="hero-subtitle">
+                Accurately calculate your Semester Grade Point Average (SGPA), convert SGPA to equivalent percentage,
+                calculate required target marks, and view dynamic subject grade distribution charts.
+            </p>
+            <div class="hero-badges">
+                <span class="badge-pill"><i class="fas fa-check-circle"></i> 10-Point &amp; 4.0/5.0 Scale</span>
+                <span class="badge-pill"><i class="fas fa-sliders-h"></i> Grade &amp; Marks Entry Modes</span>
+                <span class="badge-pill"><i class="fas fa-calculator"></i> Target Grade Planner</span>
+                <span class="badge-pill"><i class="fas fa-chart-pie"></i> Visual Grade Analytics</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Container -->
+    <main class="container">
+        <!-- Quick Branch/Semester Preset Bar -->
+        <div class="preset-container">
+            <div class="preset-header">
+                <div class="preset-title">
+                    <i class="fas fa-layer-group" style="color: var(--primary-color);"></i>
+                    <span>Quick Load Semester Presets:</span>
+                </div>
+                <div class="preset-buttons" id="presetButtons">
+                    <button type="button" class="btn-preset active" onclick="loadPreset('std5')">5 Subjects (20 Credits)</button>
+                    <button type="button" class="btn-preset" onclick="loadPreset('eng1')">Eng Sem 1 (22 Credits)</button>
+                    <button type="button" class="btn-preset" onclick="loadPreset('eng2')">Eng Sem 2 (21 Credits)</button>
+                    <button type="button" class="btn-preset" onclick="loadPreset('gen6')">6 Subjects (18 Credits)</button>
+                    <button type="button" class="btn-preset" onclick="clearAllRows()"><i class="fas fa-trash-alt"></i> Clear All</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Calculator Grid -->
+        <div class="calc-grid">
+            <!-- Left Column: Input Form -->
+            <div class="left-col">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <h2 class="card-title">
+                                <i class="fas fa-edit" style="color: var(--primary-color);"></i>
+                                Semester Course &amp; Grade Matrix
+                            </h2>
+                            <p class="card-subtitle">Enter your course names, credits, and grade or marks earned.</p>
+                        </div>
+                        <div>
+                            <span id="savedIndicator"
+                                style="font-size: 0.8rem; color: #10b981; font-weight: 600; display: none;">
+                                <i class="fas fa-check"></i> Auto-saved
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Configuration Options -->
+                    <div class="options-row">
+                        <div class="input-group">
+                            <label><i class="fas fa-award"></i> Grading Scale Scheme</label>
+                            <select id="scaleSelect" class="input-control" onchange="handleSchemeOrModeChange()">
+                                <option value="standard_10">Standard 10-Point Scale (O=10, A+=9, A=8...)</option>
+                                <option value="scale_10_alt">10-Point Scale 2 (A+=10, A=9, B+=8...)</option>
+                                <option value="gpa_4">4.0 US/Global GPA Scale (A=4.0, A-=3.7...)</option>
+                                <option value="scale_5">5.0 Grading Scale (A=5, B=4, C=3...)</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label><i class="fas fa-list"></i> Input Mode</label>
+                            <select id="inputModeSelect" class="input-control" onchange="handleSchemeOrModeChange()">
+                                <option value="grade">Letter Grade (O, A+, A...)</option>
+                                <option value="marks">Marks / Percentage (0 - 100)</option>
+                                <option value="direct">Direct Grade Points (Numerical)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Table -->
+                    <div class="table-responsive">
+                        <table class="calc-table" id="sgpaTable">
+                            <thead>
+                                <tr>
+                                    <th style="width: 32%;">Subject / Course Name</th>
+                                    <th style="width: 18%;">Credits</th>
+                                    <th style="width: 25%;" id="gradeColHeader">Grade</th>
+                                    <th style="width: 15%; text-align: center;">Credit Pts</th>
+                                    <th style="width: 10%; text-align: center;">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="subjectRows">
+                                <!-- Dynamic Subject Rows -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="table-actions">
+                        <button type="button" class="btn btn-primary" onclick="addSubjectRow()">
+                            <i class="fas fa-plus"></i> Add Subject Row
+                        </button>
+                        <button type="button" class="btn btn-outline" onclick="loadPreset('std5')">
+                            <i class="fas fa-undo"></i> Reset Matrix
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Target SGPA / Subject Requirement Planner -->
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title">
+                                <i class="fas fa-bullseye" style="color: #9333ea;"></i>
+                                Target SGPA &amp; Required Grade Planner
+                            </h3>
+                            <p class="card-subtitle">Calculate the required average grade point needed in remaining pending subjects to achieve your target SGPA.</p>
+                        </div>
+                    </div>
+
+                    <div class="tab-inputs">
+                        <div>
+                            <label style="font-size: 0.85rem; font-weight: 600; color: #475569;">Target SGPA Goal</label>
+                            <input type="number" id="targetSgpaGoal" class="input-control" placeholder="e.g. 8.50"
+                                step="0.01" min="0" max="10" value="8.50" oninput="calculateTargetGradePlanner()">
+                        </div>
+                        <div>
+                            <label style="font-size: 0.85rem; font-weight: 600; color: #475569;">Pending Subject Credits</label>
+                            <input type="number" id="pendingCreditsInput" class="input-control" placeholder="e.g. 6"
+                                step="0.5" min="1" max="30" value="6" oninput="calculateTargetGradePlanner()">
+                        </div>
+                    </div>
+
+                    <div class="tab-output" id="targetPlannerOutput">
+                        Fill in completed course grades above to calculate remaining grade requirements.
+                    </div>
+                </div>
+
+                <!-- SGPA to Cumulative CGPA Impact Calculator -->
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title">
+                                <i class="fas fa-calculator" style="color: #0284c7;"></i>
+                                SGPA to Cumulative CGPA Predictor
+                            </h3>
+                            <p class="card-subtitle">Combine your current SGPA with past semesters to see updated overall CGPA.</p>
+                        </div>
+                    </div>
+
+                    <div class="tab-inputs">
+                        <div>
+                            <label style="font-size: 0.85rem; font-weight: 600; color: #475569;">Previous Cumulative CGPA</label>
+                            <input type="number" id="prevCgpaInput" class="input-control" placeholder="e.g. 8.20"
+                                step="0.01" min="0" max="10" oninput="calculateCgpaImpact()">
+                        </div>
+                        <div>
+                            <label style="font-size: 0.85rem; font-weight: 600; color: #475569;">Previous Total Credits</label>
+                            <input type="number" id="prevCreditsInput" class="input-control" placeholder="e.g. 42"
+                                step="0.5" min="0" max="250" oninput="calculateCgpaImpact()">
+                        </div>
+                    </div>
+
+                    <div class="tab-output" id="cgpaImpactOutput" style="border-color: #38bdf8; background: #f0f9ff; color: #0369a1;">
+                        Enter previous CGPA and credits to calculate your new overall CGPA.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Results & Graphs -->
+            <div class="right-col">
+                <div class="card" style="position: sticky; top: 90px;">
+                    <div class="card-header">
+                        <h2 class="card-title">
+                            <i class="fas fa-poll-h" style="color: var(--primary-color);"></i>
+                            SGPA &amp; Percentage Summary
+                        </h2>
+                    </div>
+
+                    <div class="result-highlight-box">
+                        <div class="result-label">Semester SGPA</div>
+                        <div class="result-sgpa-val" id="displaySgpa">0.00</div>
+                        <div id="divisionBadgeContainer">
+                            <span class="standing-badge badge-pass" id="standingBadge">Enter subject grades</span>
+                        </div>
+                    </div>
+
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-val" id="displayPercentage">0.00%</div>
+                            <div class="metric-title">Equivalent Percentage</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-val" id="displayTotalCredits">0</div>
+                            <div class="metric-title">Total Semester Credits</div>
+                        </div>
+                    </div>
+
+                    <!-- Formula Selector for Percentage -->
+                    <div style="margin-bottom: 1rem;">
+                        <label style="font-size: 0.8rem; font-weight: 700; color: #475569; display: block; margin-bottom: 0.35rem;">
+                            Percentage Conversion Formula:
+                        </label>
+                        <select id="percentageFormulaSelect" class="input-control" onchange="calculateSGPA()">
+                            <option value="10">Standard 10x (Percentage = SGPA × 10)</option>
+                            <option value="9.5">CBSE/AICTE 9.5x (Percentage = SGPA × 9.5)</option>
+                            <option value="offset75">Autonomous Formula (Percentage = (SGPA - 0.75) × 10)</option>
+                            <option value="offset50">GTU Formula (Percentage = (SGPA - 0.5) × 10)</option>
+                            <option value="gpa4">4.0 Scale (Percentage = GPA × 25)</option>
+                        </select>
+                    </div>
+
+                    <!-- Action buttons -->
+                    <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1.25rem;">
+                        <button type="button" class="btn btn-outline" style="flex: 1; font-size: 0.85rem;"
+                            onclick="copyResultSummary()">
+                            <i class="fas fa-copy"></i> Copy Result
+                        </button>
+                        <button type="button" class="btn btn-outline" style="flex: 1; font-size: 0.85rem;"
+                            onclick="window.print()">
+                            <i class="fas fa-print"></i> Print / PDF
+                        </button>
+                    </div>
+
+                    <!-- Chart section -->
+                    <div>
+                        <h4 style="font-size: 0.95rem; font-weight: 700; color: #334155; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.4rem;">
+                            <i class="fas fa-chart-pie" style="color: var(--primary-color);"></i>
+                            Subject Grade Distribution
+                        </h4>
+                        <div class="chart-container">
+                            <canvas id="gradeChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Standalone Quick SGPA to Percentage Converter -->
+        <section class="section" style="padding-top: 1rem;">
+            <div class="card converter-card">
+                <div class="converter-header">
+                    <i class="fas fa-calculator"></i>
+                    <span>Quick Standalone SGPA to Percentage Converter</span>
+                </div>
+                <div class="converter-form">
+                    <div>
+                        <label style="font-size: 0.85rem; font-weight: 600; color: #14532d; display: block; margin-bottom: 0.3rem;">
+                            Enter Semester SGPA
+                        </label>
+                        <input type="number" id="quickSgpaInput" class="input-control"
+                            placeholder="Enter SGPA (e.g. 8.40)" step="0.01" min="0" max="10"
+                            oninput="runQuickConversion()">
+                    </div>
+                    <div>
+                        <label style="font-size: 0.85rem; font-weight: 600; color: #14532d; display: block; margin-bottom: 0.3rem;">
+                            Select Conversion Formula
+                        </label>
+                        <select id="quickFormulaSelect" class="input-control" onchange="runQuickConversion()">
+                            <option value="10">Standard 10x Formula (Percentage = SGPA × 10)</option>
+                            <option value="9.5">AICTE/CBSE 9.5x Formula (Percentage = SGPA × 9.5)</option>
+                            <option value="offset10">VTU/Mumbai Offset Formula (Percentage = (SGPA - 0.75) × 10)</option>
+                            <option value="offset50">GTU Formula (Percentage = (SGPA - 0.5) × 10)</option>
+                            <option value="25">4.0 GPA Scale (Percentage = GPA × 25)</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="quickResultDisplay"
+                    style="margin-top: 1.25rem; font-size: 1.3rem; font-weight: 800; color: #15803d; text-align: center; background: white; padding: 1rem; border-radius: 8px; border: 1px solid #86efac;">
+                    Equivalent Percentage: <span id="quickPercentageVal">0.00%</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Standard Grade Matrix Reference Table -->
+        <section class="section" style="padding-top: 0;">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">
+                        <i class="fas fa-table" style="color: var(--primary-color);"></i>
+                        Standard Choice Based Credit System (CBCS) 10-Point Grade Matrix
+                    </h3>
+                </div>
+                <div class="table-responsive">
+                    <table class="ref-table">
+                        <thead>
+                            <tr>
+                                <th>Letter Grade</th>
+                                <th>Grade Description</th>
+                                <th>Grade Point (GP)</th>
+                                <th>Marks Range (%)</th>
+                                <th>Academic Performance Indicator</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong style="color: #15803d;">O</strong></td>
+                                <td>Outstanding</td>
+                                <td>10</td>
+                                <td>90% – 100%</td>
+                                <td>First Class with Distinction</td>
+                            </tr>
+                            <tr>
+                                <td><strong style="color: #166534;">A+</strong></td>
+                                <td>Excellent</td>
+                                <td>9</td>
+                                <td>80% – 89%</td>
+                                <td>First Class with Distinction</td>
+                            </tr>
+                            <tr>
+                                <td><strong style="color: #1d4ed8;">A</strong></td>
+                                <td>Very Good</td>
+                                <td>8</td>
+                                <td>70% – 79%</td>
+                                <td>First Class</td>
+                            </tr>
+                            <tr>
+                                <td><strong style="color: #2563eb;">B+</strong></td>
+                                <td>Good</td>
+                                <td>7</td>
+                                <td>60% – 69%</td>
+                                <td>First Class</td>
+                            </tr>
+                            <tr>
+                                <td><strong style="color: #d97706;">B</strong></td>
+                                <td>Above Average</td>
+                                <td>6</td>
+                                <td>50% – 59%</td>
+                                <td>Second Class</td>
+                            </tr>
+                            <tr>
+                                <td><strong style="color: #b45309;">C</strong></td>
+                                <td>Average</td>
+                                <td>5</td>
+                                <td>45% – 49%</td>
+                                <td>Pass Class</td>
+                            </tr>
+                            <tr>
+                                <td><strong style="color: #64748b;">P</strong></td>
+                                <td>Pass</td>
+                                <td>4</td>
+                                <td>40% – 44%</td>
+                                <td>Pass Class</td>
+                            </tr>
+                            <tr>
+                                <td><strong style="color: #dc2626;">F / AB</strong></td>
+                                <td>Fail / Absent</td>
+                                <td>0</td>
+                                <td>Below 40%</td>
+                                <td>Re-appear Required</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Educational & Guide Article -->
+        <article class="content-card">
+            <h2><i class="fas fa-book-open" style="color: var(--primary-color);"></i> Everything You Need to Know About SGPA Calculation</h2>
+            
+            <p>
+                <strong>SGPA (Semester Grade Point Average)</strong> is an academic evaluation metric used by colleges, autonomous institutes, and universities across India and globally under the <strong>Choice Based Credit System (CBCS)</strong>. It measures a student's academic standing for a single semester based on course credits and letter grades or marks earned.
+            </p>
+
+            <h3>1. What is the Official SGPA Formula?</h3>
+            <p>
+                The SGPA formula calculates the credit-weighted average of grade points earned in all courses taken during a specific semester. Mathematically, it is expressed as:
+            </p>
+            <div class="formula-display">
+                SGPA = Σ (Course Credit × Grade Point) / Σ (Total Semester Credits)
+            </div>
+            <p>
+                Where:
+            </p>
+            <ul style="list-style: disc; margin-left: 1.5rem; margin-bottom: 1rem; color: var(--text-light);">
+                <li><strong>Course Credit ($C_i$):</strong> The credit weight assigned to a subject based on weekly lecture, tutorial, or practical hours.</li>
+                <li><strong>Grade Point ($G_i$):</strong> The numerical value corresponding to the letter grade obtained in the course (e.g., O=10, A+=9, A=8).</li>
+                <li><strong>Credit Points ($C_i \times G_i$):</strong> The product of the subject credit and earned grade point.</li>
+            </ul>
+
+            <h3>2. Step-by-Step Example of SGPA Calculation</h3>
+            <p>Suppose a B.Tech Computer Science student completes 5 subjects in Semester 3 as follows:</p>
+            <div class="table-responsive">
+                <table class="ref-table">
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Credits ($C_i$)</th>
+                            <th>Letter Grade</th>
+                            <th>Grade Point ($G_i$)</th>
+                            <th>Credit Points ($C_i \times G_i$)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Data Structures &amp; Algorithms</td>
+                            <td>4.0</td>
+                            <td>O</td>
+                            <td>10</td>
+                            <td>40.0</td>
+                        </tr>
+                        <tr>
+                            <td>Computer Organization</td>
+                            <td>3.0</td>
+                            <td>A+</td>
+                            <td>9</td>
+                            <td>27.0</td>
+                        </tr>
+                        <tr>
+                            <td>Discrete Mathematics</td>
+                            <td>3.0</td>
+                            <td>A</td>
+                            <td>8</td>
+                            <td>24.0</td>
+                        </tr>
+                        <tr>
+                            <td>Object Oriented Programming Lab</td>
+                            <td>1.5</td>
+                            <td>O</td>
+                            <td>10</td>
+                            <td>15.0</td>
+                        </tr>
+                        <tr>
+                            <td>Digital Logic Lab</td>
+                            <td>1.5</td>
+                            <td>A+</td>
+                            <td>9</td>
+                            <td>13.5</td>
+                        </tr>
+                        <tr>
+                            <strong>Total</strong>
+                            <td><strong>13.0 Credits</strong></td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td><strong>119.5 Credit Points</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p style="margin-top: 1rem;">
+                <strong>Calculation:</strong> $\text{SGPA} = \frac{119.5}{13.0} = \mathbf{9.19 / 10.00}$.<br>
+                <strong>Equivalent Percentage:</strong> $9.19 \times 10 = \mathbf{91.90\%}$ (First Class with Distinction).
+            </p>
+
+            <h3>3. Difference Between SGPA and CGPA</h3>
+            <div class="table-responsive">
+                <table class="ref-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>SGPA (Semester Grade Point Average)</th>
+                            <th>CGPA (Cumulative Grade Point Average)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Scope</strong></td>
+                            <td>Single individual semester</td>
+                            <td>Cumulative performance across all completed semesters</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Frequency</strong></td>
+                            <td>Calculated at the end of each semester</td>
+                            <td>Calculated progressively at the end of degree / year</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Impact</strong></td>
+                            <td>Directly determines semester rank & scholarship eligibility</td>
+                            <td>Used for final degree classification, placements, & higher studies</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Formula</strong></td>
+                            <td>$\frac{\sum (\text{Sem Credit} \times \text{Sem GP})}{\sum \text{Sem Credits}}$</td>
+                            <td>$\frac{\sum (\text{SGPA}_i \times \text{Sem Credits}_i)}{\sum \text{Total Program Credits}}$</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>4. Practical Tips to Boost Your Semester SGPA</h3>
+            <ul style="list-style: disc; margin-left: 1.5rem; color: var(--text-light); line-height: 1.8;">
+                <li><strong>Prioritize High-Credit Courses:</strong> Core subjects carrying 4 credits impact your overall SGPA significantly more than 1 or 2 credit electives.</li>
+                <li><strong>Maximize Practical Lab Marks:</strong> Practical exams, lab vivas, and project assignments usually carry high grade point returns (O or A+) with consistent attendance and timely lab submissions.</li>
+                <li><strong>Maintain Minimum Attendance:</strong> Avoid grade penalties or debarment by keeping your attendance above 75% across all theory and lab subjects.</li>
+                <li><strong>Track Continuous Internal Evaluation (CIE):</strong> Midterm exams, quizzes, and internal assignments account for 20%–40% of final subject marks. Scoring high in internals lowers stress during end-term university exams.</li>
+            </ul>
+        </article>
+
+        <!-- Popular University SGPA Calculators Links Grid -->
+        <section class="section" style="padding-top: 0;">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">
+                        <i class="fas fa-university" style="color: var(--primary-color);"></i>
+                        Explore Specialized University Calculators &amp; Tools
+                    </h3>
+                </div>
+                <div class="tools-grid">
+                    <a href="/rtu-sgpa-calculator" class="tool-link-card">
+                        <div class="tool-icon-box"><i class="fas fa-graduation-cap"></i></div>
+                        <div>
+                            <div class="tool-info-title">RTU SGPA Calculator</div>
+                            <div class="tool-info-desc">Rajasthan Technical University pre-loaded B.Tech credit matrix.</div>
+                        </div>
+                    </a>
+                    <a href="/skit-sgpa-calculator" class="tool-link-card">
+                        <div class="tool-icon-box"><i class="fas fa-award"></i></div>
+                        <div>
+                            <div class="tool-info-title">SKIT SGPA Calculator</div>
+                            <div class="tool-info-desc">Official SKIT Jaipur CBCS branch-wise semester calculator.</div>
+                        </div>
+                    </a>
+                    <a href="/mbm-sgpa-calculator" class="tool-link-card">
+                        <div class="tool-icon-box"><i class="fas fa-building-columns"></i></div>
+                        <div>
+                            <div class="tool-info-title">MBM SGPA Calculator</div>
+                            <div class="tool-info-desc">MBM University Jodhpur engineering SGPA & percentage tool.</div>
+                        </div>
+                    </a>
+                    <a href="/cgpa-calculator" class="tool-link-card">
+                        <div class="tool-icon-box"><i class="fas fa-chart-line"></i></div>
+                        <div>
+                            <div class="tool-info-title">Universal CGPA Calculator</div>
+                            <div class="tool-info-desc">Calculate multi-semester cumulative CGPA & target SGPA goals.</div>
+                        </div>
+                    </a>
+                    <a href="/attendance-calculator" class="tool-link-card">
+                        <div class="tool-icon-box"><i class="fas fa-calendar-check"></i></div>
+                        <div>
+                            <div class="tool-info-title">Attendance Calculator</div>
+                            <div class="tool-info-desc">Calculate required classes to reach 75% minimum threshold.</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section" style="padding-top: 0;">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">
+                        <i class="fas fa-question-circle" style="color: var(--primary-color);"></i>
+                        Frequently Asked Questions (FAQs)
+                    </h3>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>What is SGPA and how is it calculated?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        SGPA (Semester Grade Point Average) evaluates student performance in a single semester under the Choice Based Credit System (CBCS). It is calculated by dividing total credit points earned (sum of subject credits multiplied by grade points) by total semester credits.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>How do I convert SGPA to equivalent percentage?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Under the standard 10-point grading scale used by most UGC & AICTE recognized universities, <strong>Percentage (%) = SGPA × 10</strong>. For example, an SGPA of 8.50 corresponds to 85.00%. For universities following 9.5x scale (like CBSE standard), <strong>Percentage (%) = SGPA × 9.5</strong>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Can I enter subject marks instead of letter grades?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! Change the "Input Mode" dropdown from 'Letter Grade' to 'Marks / Percentage'. You can type marks out of 100 for each subject, and our calculator will automatically determine grade points according to standard 10-point university evaluation rules.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>What SGPA is required for First Class with Distinction?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Generally, an SGPA or CGPA of <strong>7.50 or higher</strong> (equivalent to 75% marks) without any backlog papers qualifies a student for First Class with Distinction. An SGPA between 6.50 and 7.49 is classified as First Class.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>How does a backlog or F grade affect my SGPA?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        An 'F' (Fail) grade awards 0 grade points for that subject while the course credits remain added to the total semester credits denominator. This significantly lowers your overall SGPA until the backlog paper is re-cleared in subsequent supplementary examinations.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Shared Footer -->
+    <footer id="siteFooter"></footer>
+
+    <!-- External Common Script -->
+    <script src="./common.js"></script>
+
+    <!-- SGPA Logic Script -->
+    <script>
+        // Global State & Presets
+        let subjectData = [];
+        let gradeChart = null;
+
+        const SCHEMES = {
+            standard_10: {
+                grades: [
+                    { label: 'O (10 Pts - 90-100%)', val: 10, code: 'O' },
+                    { label: 'A+ (9 Pts - 80-89%)', val: 9, code: 'A+' },
+                    { label: 'A (8 Pts - 70-79%)', val: 8, code: 'A' },
+                    { label: 'B+ (7 Pts - 60-69%)', val: 7, code: 'B+' },
+                    { label: 'B (6 Pts - 50-59%)', val: 6, code: 'B' },
+                    { label: 'C (5 Pts - 45-49%)', val: 5, code: 'C' },
+                    { label: 'P (4 Pts - 40-44%)', val: 4, code: 'P' },
+                    { label: 'F (0 Pts - Fail)', val: 0, code: 'F' }
+                ],
+                marksToGrade: (m) => {
+                    if (m >= 90) return { val: 10, code: 'O' };
+                    if (m >= 80) return { val: 9, code: 'A+' };
+                    if (m >= 70) return { val: 8, code: 'A' };
+                    if (m >= 60) return { val: 7, code: 'B+' };
+                    if (m >= 50) return { val: 6, code: 'B' };
+                    if (m >= 45) return { val: 5, code: 'C' };
+                    if (m >= 40) return { val: 4, code: 'P' };
+                    return { val: 0, code: 'F' };
+                }
+            },
+            scale_10_alt: {
+                grades: [
+                    { label: 'A+ (10 Pts - Outstanding)', val: 10, code: 'A+' },
+                    { label: 'A (9 Pts - Excellent)', val: 9, code: 'A' },
+                    { label: 'B+ (8 Pts - Very Good)', val: 8, code: 'B+' },
+                    { label: 'B (7 Pts - Good)', val: 7, code: 'B' },
+                    { label: 'C+ (6 Pts - Above Avg)', val: 6, code: 'C+' },
+                    { label: 'C (5 Pts - Average)', val: 5, code: 'C' },
+                    { label: 'D (4 Pts - Pass)', val: 4, code: 'D' },
+                    { label: 'F (0 Pts - Fail)', val: 0, code: 'F' }
+                ],
+                marksToGrade: (m) => {
+                    if (m >= 90) return { val: 10, code: 'A+' };
+                    if (m >= 80) return { val: 9, code: 'A' };
+                    if (m >= 70) return { val: 8, code: 'B+' };
+                    if (m >= 60) return { val: 7, code: 'B' };
+                    if (m >= 50) return { val: 6, code: 'C+' };
+                    if (m >= 45) return { val: 5, code: 'C' };
+                    if (m >= 40) return { val: 4, code: 'D' };
+                    return { val: 0, code: 'F' };
+                }
+            },
+            gpa_4: {
+                grades: [
+                    { label: 'A (4.0 Pts - 93-100%)', val: 4.0, code: 'A' },
+                    { label: 'A- (3.7 Pts - 90-92%)', val: 3.7, code: 'A-' },
+                    { label: 'B+ (3.3 Pts - 87-89%)', val: 3.3, code: 'B+' },
+                    { label: 'B (3.0 Pts - 83-86%)', val: 3.0, code: 'B' },
+                    { label: 'B- (2.7 Pts - 80-82%)', val: 2.7, code: 'B-' },
+                    { label: 'C+ (2.3 Pts - 77-79%)', val: 2.3, code: 'C+' },
+                    { label: 'C (2.0 Pts - 73-76%)', val: 2.0, code: 'C' },
+                    { label: 'C- (1.7 Pts - 70-72%)', val: 1.7, code: 'C-' },
+                    { label: 'D+ (1.3 Pts - 67-69%)', val: 1.3, code: 'D+' },
+                    { label: 'D (1.0 Pts - 60-66%)', val: 1.0, code: 'D' },
+                    { label: 'F (0.0 Pts - Below 60%)', val: 0.0, code: 'F' }
+                ],
+                marksToGrade: (m) => {
+                    if (m >= 93) return { val: 4.0, code: 'A' };
+                    if (m >= 90) return { val: 3.7, code: 'A-' };
+                    if (m >= 87) return { val: 3.3, code: 'B+' };
+                    if (m >= 83) return { val: 3.0, code: 'B' };
+                    if (m >= 80) return { val: 2.7, code: 'B-' };
+                    if (m >= 77) return { val: 2.3, code: 'C+' };
+                    if (m >= 73) return { val: 2.0, code: 'C' };
+                    if (m >= 70) return { val: 1.7, code: 'C-' };
+                    if (m >= 67) return { val: 1.3, code: 'D+' };
+                    if (m >= 60) return { val: 1.0, code: 'D' };
+                    return { val: 0.0, code: 'F' };
+                }
+            },
+            scale_5: {
+                grades: [
+                    { label: 'A (5 Pts - 70-100%)', val: 5, code: 'A' },
+                    { label: 'B (4 Pts - 60-69%)', val: 4, code: 'B' },
+                    { label: 'C (3 Pts - 50-59%)', val: 3, code: 'C' },
+                    { label: 'D (2 Pts - 45-49%)', val: 2, code: 'D' },
+                    { label: 'E (1 Pt - 40-44%)', val: 1, code: 'E' },
+                    { label: 'F (0 Pts - Fail)', val: 0, code: 'F' }
+                ],
+                marksToGrade: (m) => {
+                    if (m >= 70) return { val: 5, code: 'A' };
+                    if (m >= 60) return { val: 4, code: 'B' };
+                    if (m >= 50) return { val: 3, code: 'C' };
+                    if (m >= 45) return { val: 2, code: 'D' };
+                    if (m >= 40) return { val: 1, code: 'E' };
+                    return { val: 0, code: 'F' };
+                }
+            }
+        };
+
+        const PRESETS = {
+            std5: [
+                { name: 'Subject 1', credits: 4, grade: 10 },
+                { name: 'Subject 2', credits: 4, grade: 9 },
+                { name: 'Subject 3', credits: 3, grade: 8 },
+                { name: 'Subject 4', credits: 3, grade: 9 },
+                { name: 'Subject 5 (Lab)', credits: 2, grade: 10 }
+            ],
+            eng1: [
+                { name: 'Engineering Mathematics-I', credits: 4, grade: 9 },
+                { name: 'Engineering Physics / Chem', credits: 4, grade: 8 },
+                { name: 'Basic Electrical Eng', credits: 3, grade: 9 },
+                { name: 'Programming for Problem Solving', credits: 3, grade: 10 },
+                { name: 'Engineering Physics Lab', credits: 1.5, grade: 10 },
+                { name: 'Computer Programming Lab', credits: 1.5, grade: 9 },
+                { name: 'Manufacturing Practices Lab', credits: 1.5, grade: 10 }
+            ],
+            eng2: [
+                { name: 'Engineering Mathematics-II', credits: 4, grade: 9 },
+                { name: 'Chemistry / Physics', credits: 4, grade: 8 },
+                { name: 'Basic Electronics Eng', credits: 3, grade: 9 },
+                { name: 'Engineering Graphics & Design', credits: 3, grade: 8 },
+                { name: 'Chemistry Lab', credits: 1.5, grade: 10 },
+                { name: 'Language Lab / English', credits: 1.5, grade: 9 }
+            ],
+            gen6: [
+                { name: 'Course 1', credits: 3, grade: 9 },
+                { name: 'Course 2', credits: 3, grade: 8 },
+                { name: 'Course 3', credits: 3, grade: 9 },
+                { name: 'Course 4', credits: 3, grade: 7 },
+                { name: 'Course 5', credits: 3, grade: 8 },
+                { name: 'Course 6', credits: 3, grade: 10 }
+            ]
+        };
+
+        // Initialize Calculator
+        function initSgpaCalculator() {
+            loadPreset('std5');
+            runQuickConversion();
+        }
+
+        function handleSchemeOrModeChange() {
+            renderTableRows();
+            calculateSGPA();
+        }
+
+        function loadPreset(presetKey) {
+            document.querySelectorAll('.btn-preset').forEach(b => b.classList.remove('active'));
+            const activeBtn = Array.from(document.querySelectorAll('.btn-preset')).find(b => b.getAttribute('onclick') && b.getAttribute('onclick').includes(presetKey));
+            if (activeBtn) activeBtn.classList.add('active');
+
+            if (PRESETS[presetKey]) {
+                subjectData = JSON.parse(JSON.stringify(PRESETS[presetKey]));
+            } else {
+                subjectData = [];
+            }
+            renderTableRows();
+            calculateSGPA();
+        }
+
+        function clearAllRows() {
+            subjectData = [];
+            renderTableRows();
+            calculateSGPA();
+        }
+
+        function addSubjectRow() {
+            const nextIdx = subjectData.length + 1;
+            subjectData.push({
+                name: `Subject ${nextIdx}`,
+                credits: 3,
+                grade: 8
+            });
+            renderTableRows();
+            calculateSGPA();
+        }
+
+        function removeSubjectRow(index) {
+            subjectData.splice(index, 1);
+            renderTableRows();
+            calculateSGPA();
+        }
+
+        function renderTableRows() {
+            const tbody = document.getElementById('subjectRows');
+            if (!tbody) return;
+
+            const schemeKey = document.getElementById('scaleSelect').value || 'standard_10';
+            const mode = document.getElementById('inputModeSelect').value || 'grade';
+            const currentScheme = SCHEMES[schemeKey] || SCHEMES.standard_10;
+
+            const colHeader = document.getElementById('gradeColHeader');
+            if (colHeader) {
+                if (mode === 'grade') colHeader.innerText = 'Letter Grade';
+                else if (mode === 'marks') colHeader.innerText = 'Marks (out of 100)';
+                else colHeader.innerText = 'Grade Point';
+            }
+
+            tbody.innerHTML = '';
+
+            if (subjectData.length === 0) {
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="5" style="text-align: center; color: #94a3b8; padding: 2rem;">
+                            No subjects added yet. Click <strong>+ Add Subject Row</strong> or select a preset above.
+                        </td>
+                    </tr>`;
+                return;
+            }
+
+            subjectData.forEach((sub, idx) => {
+                const tr = document.createElement('tr');
+
+                let gradeInputHtml = '';
+
+                if (mode === 'grade') {
+                    gradeInputHtml = `<select class="input-control" onchange="updateRowData(${idx}, 'grade', this.value)">`;
+                    currentScheme.grades.forEach(g => {
+                        const selected = (sub.grade === g.val) ? 'selected' : '';
+                        gradeInputHtml += `<option value="${g.val}" ${selected}>${g.label}</option>`;
+                    });
+                    gradeInputHtml += `</select>`;
+                } else if (mode === 'marks') {
+                    const currentMarks = sub.marks !== undefined ? sub.marks : (sub.grade * 10);
+                    gradeInputHtml = `<input type="number" class="input-control" value="${currentMarks}" min="0" max="100" placeholder="e.g. 85" oninput="updateRowData(${idx}, 'marks', this.value)">`;
+                } else {
+                    gradeInputHtml = `<input type="number" class="input-control" value="${sub.grade}" step="0.5" min="0" max="10" placeholder="e.g. 9.0" oninput="updateRowData(${idx}, 'grade', this.value)">`;
+                }
+
+                let calculatedGp = sub.grade || 0;
+                if (mode === 'marks') {
+                    const marksVal = sub.marks !== undefined ? parseFloat(sub.marks) : (sub.grade * 10);
+                    const mapped = currentScheme.marksToGrade(marksVal || 0);
+                    calculatedGp = mapped.val;
+                }
+                const creditPts = (parseFloat(sub.credits) || 0) * (parseFloat(calculatedGp) || 0);
+                const modeLabel = mode === 'grade' ? 'Letter Grade' : (mode === 'marks' ? 'Marks (out of 100)' : 'Grade Point');
+
+                tr.innerHTML = `
+                    <td data-label="Course Name">
+                        <input type="text" class="input-control" value="${escapeHtml(sub.name)}" placeholder="Course Name" oninput="updateRowData(${idx}, 'name', this.value)">
+                    </td>
+                    <td data-label="Credits">
+                        <span class="mobile-label-span">Credits:</span>
+                        <input type="number" class="input-control" value="${sub.credits}" step="0.5" min="0.5" max="12" oninput="updateRowData(${idx}, 'credits', this.value)">
+                    </td>
+                    <td data-label="${modeLabel}">
+                        <span class="mobile-label-span">${modeLabel}:</span>
+                        ${gradeInputHtml}
+                    </td>
+                    <td data-label="Credit Pts" style="text-align: center;">
+                        <span class="mobile-label-span">Credit Pts:</span>
+                        <strong style="color: var(--primary-color); font-size: 1.05rem;">${creditPts.toFixed(1)}</strong>
+                    </td>
+                    <td data-label="Action" style="text-align: center;">
+                        <button type="button" class="btn-icon-danger" onclick="removeSubjectRow(${idx})" title="Remove Subject">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        function updateRowData(index, field, value) {
+            if (!subjectData[index]) return;
+
+            const schemeKey = document.getElementById('scaleSelect').value || 'standard_10';
+            const currentScheme = SCHEMES[schemeKey] || SCHEMES.standard_10;
+
+            if (field === 'name') {
+                subjectData[index].name = value;
+            } else if (field === 'credits') {
+                subjectData[index].credits = parseFloat(value) || 0;
+            } else if (field === 'grade') {
+                subjectData[index].grade = parseFloat(value) || 0;
+            } else if (field === 'marks') {
+                const marksVal = parseFloat(value) || 0;
+                subjectData[index].marks = marksVal;
+                const mapped = currentScheme.marksToGrade(marksVal);
+                subjectData[index].grade = mapped.val;
+            }
+
+            calculateSGPA();
+        }
+
+        function escapeHtml(str) {
+            return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+        }
+
+        function calculateSGPA() {
+            const schemeKey = document.getElementById('scaleSelect').value || 'standard_10';
+            const mode = document.getElementById('inputModeSelect').value || 'grade';
+            const currentScheme = SCHEMES[schemeKey] || SCHEMES.standard_10;
+            const formulaMult = parseFloat(document.getElementById('percentageFormulaSelect').value) || 10;
+            const formulaSelectVal = document.getElementById('percentageFormulaSelect').value;
+
+            let totalCredits = 0;
+            let totalCreditPoints = 0;
+            let gradeCounts = {};
+
+            subjectData.forEach(sub => {
+                const credits = parseFloat(sub.credits) || 0;
+                let gp = parseFloat(sub.grade) || 0;
+
+                if (mode === 'marks') {
+                    const marksVal = sub.marks !== undefined ? parseFloat(sub.marks) : (gp * 10);
+                    const mapped = currentScheme.marksToGrade(marksVal || 0);
+                    gp = mapped.val;
+                }
+
+                const pts = credits * gp;
+                totalCredits += credits;
+                totalCreditPoints += pts;
+
+                const roundedGp = gp.toFixed(1);
+                gradeCounts[roundedGp] = (gradeCounts[roundedGp] || 0) + 1;
+            });
+
+            let sgpa = 0;
+            if (totalCredits > 0) {
+                sgpa = totalCreditPoints / totalCredits;
+            }
+
+            // Calculate percentage
+            let percentage = 0;
+            if (formulaSelectVal === 'offset75') {
+                percentage = Math.max(0, (sgpa - 0.75) * 10);
+            } else if (formulaSelectVal === 'offset50') {
+                percentage = Math.max(0, (sgpa - 0.50) * 10);
+            } else {
+                percentage = sgpa * formulaMult;
+            }
+
+            // Update UI
+            document.getElementById('displaySgpa').innerText = sgpa.toFixed(2);
+            document.getElementById('displayPercentage').innerText = percentage.toFixed(2) + '%';
+            document.getElementById('displayTotalCredits').innerText = totalCredits;
+
+            // Standing badge
+            const badgeElem = document.getElementById('standingBadge');
+            if (badgeElem) {
+                if (totalCredits === 0) {
+                    badgeElem.className = 'standing-badge badge-pass';
+                    badgeElem.innerText = 'Enter subject grades';
+                } else if (sgpa >= 7.5) {
+                    badgeElem.className = 'standing-badge badge-distinction';
+                    badgeElem.innerText = 'First Class with Distinction';
+                } else if (sgpa >= 6.5) {
+                    badgeElem.className = 'standing-badge badge-firstclass';
+                    badgeElem.innerText = 'First Class Standing';
+                } else if (sgpa >= 5.5) {
+                    badgeElem.className = 'standing-badge badge-secondclass';
+                    badgeElem.innerText = 'Second Class Standing';
+                } else if (sgpa >= 4.0) {
+                    badgeElem.className = 'standing-badge badge-pass';
+                    badgeElem.innerText = 'Pass Class';
+                } else {
+                    badgeElem.className = 'standing-badge badge-fail';
+                    badgeElem.innerText = 'Fail / Re-appear Required';
+                }
+            }
+
+            // Show Auto-saved indicator
+            const savedIndicator = document.getElementById('savedIndicator');
+            if (savedIndicator) {
+                savedIndicator.style.display = 'inline-block';
+                setTimeout(() => { savedIndicator.style.display = 'none'; }, 2000);
+            }
+
+            // Save state to localStorage
+            try {
+                localStorage.setItem('famral_sgpa_data', JSON.stringify({
+                    subjects: subjectData,
+                    scheme: schemeKey,
+                    mode: mode
+                }));
+            } catch (e) { }
+
+            updateChart(gradeCounts);
+            calculateTargetGradePlanner();
+            calculateCgpaImpact();
+        }
+
+        // Chart Update
+        function updateChart(gradeCounts) {
+            const ctx = document.getElementById('gradeChart');
+            if (!ctx) return;
+
+            const labels = Object.keys(gradeCounts).map(g => `${g} Pts`);
+            const data = Object.values(gradeCounts);
+
+            if (gradeChart) {
+                gradeChart.destroy();
+            }
+
+            if (labels.length === 0) return;
+
+            gradeChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        data: data,
+                        backgroundColor: [
+                            '#0067b8', '#10b981', '#f59e0b', '#8b5cf6',
+                            '#ec4899', '#06b6d4', '#64748b', '#ef4444'
+                        ],
+                        borderWidth: 2,
+                        borderColor: '#ffffff'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'right',
+                            labels: {
+                                boxWidth: 12,
+                                font: { family: 'Inter', size: 11 }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Target Grade Planner
+        function calculateTargetGradePlanner() {
+            const targetVal = parseFloat(document.getElementById('targetSgpaGoal').value) || 0;
+            const pendingCredits = parseFloat(document.getElementById('pendingCreditsInput').value) || 0;
+            const outputBox = document.getElementById('targetPlannerOutput');
+
+            let currentCredits = 0;
+            let currentPts = 0;
+
+            subjectData.forEach(sub => {
+                const c = parseFloat(sub.credits) || 0;
+                const g = parseFloat(sub.grade) || 0;
+                currentCredits += c;
+                currentPts += (c * g);
+            });
+
+            const totalProjectedCredits = currentCredits + pendingCredits;
+
+            if (pendingCredits <= 0 || targetVal <= 0) {
+                outputBox.innerText = "Enter target SGPA and remaining pending credits to calculate required grades.";
+                return;
+            }
+
+            const requiredTotalPts = targetVal * totalProjectedCredits;
+            const requiredPendingPts = requiredTotalPts - currentPts;
+            const reqAvgGp = requiredPendingPts / pendingCredits;
+
+            if (reqAvgGp > 10.0) {
+                outputBox.innerHTML = `<span style="color: #dc2626;">Target unattainable. You need an average grade point of <strong>${reqAvgGp.toFixed(2)}</strong> per remaining credit (Max possible is 10.0).</span>`;
+            } else if (reqAvgGp <= 0) {
+                outputBox.innerHTML = `<span style="color: #15803d;">Target achieved! Your current subject grades already exceed your target SGPA of <strong>${targetVal.toFixed(2)}</strong>.</span>`;
+            } else {
+                outputBox.innerHTML = `To reach an SGPA of <strong>${targetVal.toFixed(2)}</strong>, you must maintain an average grade point of <span class="tab-output-val">${reqAvgGp.toFixed(2)} / 10.00</span> across your remaining ${pendingCredits} credits.`;
+            }
+        }
+
+        // SGPA to CGPA Impact Predictor
+        function calculateCgpaImpact() {
+            const prevCgpa = parseFloat(document.getElementById('prevCgpaInput').value);
+            const prevCredits = parseFloat(document.getElementById('prevCreditsInput').value);
+            const outputBox = document.getElementById('cgpaImpactOutput');
+
+            let currentCredits = 0;
+            let currentPts = 0;
+
+            subjectData.forEach(sub => {
+                const c = parseFloat(sub.credits) || 0;
+                const g = parseFloat(sub.grade) || 0;
+                currentCredits += c;
+                currentPts += (c * g);
+            });
+
+            if (isNaN(prevCgpa) || isNaN(prevCredits) || prevCredits <= 0) {
+                outputBox.innerText = "Enter previous CGPA and previous credits to calculate updated cumulative CGPA.";
+                return;
+            }
+
+            const prevPts = prevCgpa * prevCredits;
+            const combinedCredits = prevCredits + currentCredits;
+            const newCgpa = (prevPts + currentPts) / combinedCredits;
+            const newPercentage = newCgpa * 10;
+
+            outputBox.innerHTML = `Your updated cumulative CGPA will be <span style="font-size: 1.3rem; font-weight: 800; color: #0284c7;">${newCgpa.toFixed(2)}</span> (${newPercentage.toFixed(2)}% equivalent) across ${combinedCredits} total credits.`;
+        }
+
+        // Quick Standalone SGPA to Percentage Converter
+        function runQuickConversion() {
+            const inputVal = parseFloat(document.getElementById('quickSgpaInput').value);
+            const formulaVal = document.getElementById('quickFormulaSelect').value;
+            const outputSpan = document.getElementById('quickPercentageVal');
+
+            if (isNaN(inputVal) || inputVal < 0) {
+                outputSpan.innerText = "0.00%";
+                return;
+            }
+
+            let resultPct = 0;
+            if (formulaVal === 'offset10') {
+                resultPct = Math.max(0, (inputVal - 0.75) * 10);
+            } else if (formulaVal === 'offset50') {
+                resultPct = Math.max(0, (inputVal - 0.50) * 10);
+            } else {
+                resultPct = inputVal * parseFloat(formulaVal);
+            }
+
+            outputSpan.innerText = resultPct.toFixed(2) + "%";
+        }
+
+        // Copy Result Summary
+        function copyResultSummary() {
+            const sgpa = document.getElementById('displaySgpa').innerText;
+            const percentage = document.getElementById('displayPercentage').innerText;
+            const credits = document.getElementById('displayTotalCredits').innerText;
+            const standing = document.getElementById('standingBadge').innerText;
+
+            const text = `--- Famral SGPA Calculator Summary ---\nSGPA: ${sgpa} / 10.00\nEquivalent Percentage: ${percentage}\nTotal Semester Credits: ${credits}\nAcademic Standing: ${standing}\nCalculated via https://tools.famral.com/sgpa-calculator`;
+
+            navigator.clipboard.writeText(text).then(() => {
+                alert('SGPA Summary copied to clipboard!');
+            }).catch(() => {
+                alert('Failed to copy. Please copy manually.');
+            });
+        }
+
+        // Initialize on load
+        window.addEventListener('DOMContentLoaded', initSgpaCalculator);
+    </script>
+</body>
+
+</html>
