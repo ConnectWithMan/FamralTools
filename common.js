@@ -1,4 +1,3 @@
-
 // common.js - Shared Navbar, Footer, and Styles for Famral Tools
 
 function injectStyles() {
