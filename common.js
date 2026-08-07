@@ -1,5 +1,5 @@
-// common.js - Shared Navbar, Footer, and Styles for Famral Tools
 
+// common.js - Shared Navbar, Footer, and Styles for Famral Tools
 
 function injectStyles() {
     if (document.getElementById('common-styles')) return;
