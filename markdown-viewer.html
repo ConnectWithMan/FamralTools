@@ -1,4 +1,4 @@
-
+﻿
 
 
 <!DOCTYPE html>
@@ -54,32 +54,6 @@
             flex-direction: column;
             min-height: 100vh;
         }
-        header {
-            background: var(--surface);
-            padding: 1rem 2rem;
-            border-bottom: 2px solid var(--border);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-        .brand {
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: var(--primary);
-            text-decoration: none;
-            letter-spacing: -0.5px;
-        }
-        nav a {
-            margin-left: 2rem;
-            text-decoration: none;
-            color: var(--secondary);
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-        nav a:hover { color: var(--primary); }
         .hamburger { display: none; flex-direction: column; gap: 6px; background: transparent; border: none; cursor: pointer; padding: 4px; }
         .hamburger span { width: 30px; height: 3px; background-color: var(--text); transition: all 0.3s ease-in-out; }
         .hamburger.active span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
@@ -141,16 +115,6 @@
         footer { text-align: center; padding: 0.2rem; color: var(--secondary); border-top: 2px solid var(--border); background: var(--surface); }
 
         @media (max-width: 768px) {
-            header { padding: 1rem; }
-            .hamburger { display: flex; }
-            nav {
-                display: none; position: absolute; top: 100%; left: 0; right: 0;
-                background: var(--surface); flex-direction: column; align-items: center;
-                border-bottom: 2px solid var(--border); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            }
-            nav.active { display: flex; animation: slideDown 0.2s ease-out forwards; }
-            nav a { margin-left: 0; width: 100%; text-align: center; padding: 1rem 0; border-top: 1px solid var(--border); }
-            nav a:hover { background-color: var(--bg); }
         }
         .tool-content { margin-top: 4rem; border-top: 2px solid var(--border); padding-top: 2rem; }
         .tool-content h2 { font-size: 1.8rem; color: var(--text); margin-bottom: 1rem; }
@@ -247,18 +211,7 @@
     </script>
 </head>
 <body>
-    <header>
-        <a href="/" class="brand">Famral Tools</a>
-        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-            <span></span><span></span><span></span>
-        </button>
-        <nav id="nav-menu">
-            <a href="/">Home</a>
-            <a href="/developer">Developer Tools</a>
-            <a href="/image">Image Tools</a>
-            <a href="/pdf">PDF Tools</a>
-        </nav>
-    </header>
+    <header id="siteHeader"></header>
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7876432493491415"
      crossorigin="anonymous"></script>
@@ -370,20 +323,9 @@
         </div>
     </main>
 
-    <footer>
-        <p>&copy; <span id="year"></span> Famral. All rights reserved.</p>
-    </footer>
+    <footer id="siteFooter"></footer>
 
     <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-
-        // Mobile Menu Logic
-        const hamburger = document.getElementById('hamburger');
-        const navMenu = document.getElementById('nav-menu');
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
 
         // Tool Logic
         const input = document.getElementById('input');
@@ -427,5 +369,7 @@
             setTimeout(() => this.textContent = originalText, 2000);
         };
     </script>
+    <!-- Common JS -->
+    <script src="./common.js"></script>
 </body>
 </html>
