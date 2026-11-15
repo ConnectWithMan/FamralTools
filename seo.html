@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Online SEO Tools &amp; SERP Utilities | Famral Tools</title>
+    <meta name="description"
+        content="Boost your website rankings, social CTR, and search visibility with our suite of free online SEO tools. Generate Schema.org JSON-LD, Open Graph tags, meta tags, and optimize web assets directly in your browser.">
+    <meta name="keywords"
+        content="seo tools, free seo tools, open graph generator, meta tag generator, schema markup generator, json-ld generator, serp simulator, rich snippets, technical seo, webmaster tools">
+    <meta name="author" content="Famral">
+    <meta property="og:title" content="Free Online SEO Tools &amp; SERP Utilities | Famral Tools">
+    <meta property="og:description"
+        content="Boost your website rankings, social CTR, and search visibility with 100% free, client-side SEO utilities.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tools.famral.com/seo">
+    <link rel="canonical" href="https://tools.famral.com/seo">
+    <link rel="icon" type="image/png" href="https://tools.famral.com/favicon.ico">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-22NPRLMEYS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-22NPRLMEYS');
+    </script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7876432493491415"
+        crossorigin="anonymous"></script>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Free Online SEO Tools | Famral Tools",
+        "description": "Comprehensive suite of free online SEO tools including Schema Markup Generator, Open Graph Generator, Meta Tag Generator, and technical web utilities.",
+        "url": "https://tools.famral.com/seo",
+        "provider": {
+            "@type": "Organization",
+            "name": "Famral",
+            "url": "https://www.famral.com"
+        },
+        "hasPart": [
+            {
+                "@type": "WebApplication",
+                "name": "Schema Markup Generator",
+                "url": "https://tools.famral.com/schema-markup-generator",
+                "applicationCategory": "SEOApplication"
+            },
+            {
+                "@type": "WebApplication",
+                "name": "Open Graph Generator",
+                "url": "https://tools.famral.com/open-graph-generator",
+                "applicationCategory": "SEOApplication"
+            },
+            {
+                "@type": "WebApplication",
+                "name": "Meta Tag Generator",
+                "url": "https://tools.famral.com/meta-tag-generator",
+                "applicationCategory": "SEOApplication"
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --secondary: #475569;
+            --bg: #f8fafc;
+            --surface: #ffffff;
+            --text: #1e293b;
+            --border: #cbd5e1;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 5rem 1rem;
+            background: linear-gradient(to bottom, #eff6ff, var(--bg));
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin: 0 0 1rem;
+            color: #0f172a;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--secondary);
+            max-width: 680px;
+            margin: 0 auto 2rem;
+        }
+
+        .btn {
+            background: var(--primary);
+            color: white;
+            padding: 0.875rem 2rem;
+            border-radius: 0;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s;
+            display: inline-block;
+            border: 2px solid transparent;
+        }
+
+        .btn:hover {
+            background-color: var(--surface);
+            color: var(--primary);
+            border-color: var(--primary);
+            box-shadow: 4px 4px 0 var(--primary-hover);
+            transform: translate(-2px, -2px);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 1rem;
+            max-width: 1260px;
+            width: 100%;
+            margin: 2rem auto 4rem;
+            padding: 0 1.5rem;
+        }
+
+        .card {
+            background: var(--surface);
+            padding: 1.1rem 1rem;
+            border: 2px solid var(--border);
+            border-radius: 0;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 4px 4px 0 var(--primary);
+            border-color: var(--primary);
+        }
+
+        .card h3 {
+            margin: 0 0 0.35rem;
+            color: var(--text);
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .card p {
+            color: var(--secondary);
+            margin: 0 0 0.75rem;
+            font-size: 0.815rem;
+            line-height: 1.4;
+            flex-grow: 1;
+        }
+
+        .card-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.825rem;
+            margin-top: auto;
+            transition: gap 0.2s ease;
+        }
+
+        .card-link::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+        }
+
+        .card-link:hover {
+            text-decoration: underline;
+            gap: 0.5rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin: 4rem 0 2rem;
+            color: var(--text);
+        }
+
+        .features {
+            background: var(--surface);
+            padding: 4rem 1rem;
+            border-top: 2px solid var(--border);
+            border-bottom: 2px solid var(--border);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1260px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            text-align: center;
+        }
+
+        .feature-item h3 {
+            color: var(--primary);
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-item p {
+            color: var(--secondary);
+            font-size: 0.95rem;
+        }
+
+        .faq {
+            max-width: 800px;
+            margin: 0 auto 4rem;
+            padding: 0 1rem;
+        }
+
+        .faq-item {
+            border: 2px solid var(--border);
+            margin-bottom: 1rem;
+            padding: 1.5rem;
+            background: var(--surface);
+        }
+
+        .faq-item h4 {
+            margin: 0 0 0.5rem;
+            font-size: 1.15rem;
+            color: var(--text);
+        }
+
+        .faq-item p {
+            margin: 0;
+            color: var(--secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 1023px) {
+            .grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                gap: 0.85rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.25rem;
+            }
+
+            .hero p {
+                font-size: 1.05rem;
+            }
+
+            .hero {
+                padding: 3rem 1rem;
+            }
+
+            .features {
+                padding: 3rem 1rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .hero h1 {
+                font-size: 1.95rem;
+            }
+
+            .grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                padding: 0 0.75rem;
+                gap: 0.65rem;
+            }
+
+            .card {
+                padding: 0.85rem 0.75rem;
+            }
+
+            .card h3 {
+                font-size: 0.925rem;
+            }
+
+            .card p {
+                font-size: 0.775rem;
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="siteHeader"></header>
+
+    <main>
+        <section class="hero">
+            <h1>Free Online SEO Tools<br>Boost Rankings &amp; CTR</h1>
+            <p>A comprehensive suite of free online utilities designed to help website owners, digital marketers, and
+                developers maximize search engine rankings, social media engagement, and technical SEO performance.
+                Fast, secure, and runs entirely in your browser.</p>
+            <a href="#tools" class="btn">Explore All SEO Tools &darr;</a>
+        </section>
+
+        <h2 class="section-title">SEO &amp; Webmaster Utilities</h2>
+        <section id="tools" class="grid">
+
+            <div class="card">
+                <h3>Schema Markup Generator</h3>
+                <p>Generate Google-compliant Schema.org JSON-LD structured data for Articles, FAQs, Products, How-To, Local Businesses, Events, and Recipes with real-time SERP preview.</p>
+                <a href="/schema-markup-generator" class="card-link">Open Tool &rarr;</a>
+            </div>
+
+            <div class="card">
+                <h3>Open Graph Generator</h3>
+                <p>Generate Facebook Open Graph and Twitter/X Cards meta tags with real-time interactive previews for Facebook, Twitter, LinkedIn, Discord, and WhatsApp.</p>
+                <a href="/open-graph-generator" class="card-link">Open Tool &rarr;</a>
+            </div>
+
+            <div class="card">
+                <h3>Meta Tag Generator</h3>
+                <p>Craft Google-optimized meta titles, descriptions, keywords, author tags, and robots crawling directives with live desktop &amp; mobile Google search snippet simulation.</p>
+                <a href="/meta-tag-generator" class="card-link">Open Tool &rarr;</a>
+            </div>
+
+            <div class="card">
+                <h3>URL Encoder</h3>
+                <p>Safely encode special characters in query strings, UTM tracking links, and canonical URLs for flawless search engine crawling and navigation.</p>
+                <a href="/url-encoder" class="card-link">Open Tool &rarr;</a>
+            </div>
+
+            <div class="card">
+                <h3>URL Decoder</h3>
+                <p>Convert encoded URLs, URI components, and redirect parameters back into human-readable text for quick SEO auditing and link debugging.</p>
+                <a href="/url-decoder" class="card-link">Open Tool &rarr;</a>
+            </div>
+
+            <div class="card">
+                <h3>HTML Minifier</h3>
+                <p>Minify and compress webpage HTML code to reduce file size, accelerate Core Web Vitals (INP, LCP), and improve page speed rankings.</p>
+                <a href="/html-minifier" class="card-link">Open Tool &rarr;</a>
+            </div>
+
+            <div class="card">
+                <h3>HTML Beautifier</h3>
+                <p>Format and organize raw HTML code to audit heading hierarchy (H1-H6), meta tags, and semantic document outlines during technical SEO audits.</p>
+                <a href="/html-beautifier" class="card-link">Open Tool &rarr;</a>
+            </div>
+
+            <div class="card">
+                <h3>Image Compressor</h3>
+                <p>Compress and optimize image file sizes without noticeable quality loss to speed up page loading and improve Google PageSpeed Insights scores.</p>
+                <a href="/compress-image" class="card-link">Open Tool &rarr;</a>
+            </div>
+
+            <div class="card">
+                <h3>Image Converter (WebP)</h3>
+                <p>Convert images between PNG, JPG, and Google-recommended WebP format for superior compression and faster search indexing.</p>
+                <a href="/image-converter" class="card-link">Open Tool &rarr;</a>
+            </div>
+
+            <div class="card">
+                <h3>HTML to Markdown</h3>
+                <p>Convert HTML articles and blog posts into clean, semantic Markdown format for content syndication and editorial repurposing.</p>
+                <a href="/html-to-markdown" class="card-link">Open Tool &rarr;</a>
+            </div>
+
+            <div class="card">
+                <h3>Markdown to HTML</h3>
+                <p>Convert Markdown copy into valid, semantic HTML markup with proper headings, lists, and links for publishing on blogs and CMSs.</p>
+                <a href="/markdown-to-html" class="card-link">Open Tool &rarr;</a>
+            </div>
+
+            <div class="card">
+                <h3>HTML Viewer</h3>
+                <p>Test, render, and inspect your webpage HTML output directly in real-time to preview SEO changes before going live.</p>
+                <a href="/html-viewer" class="card-link">Open Tool &rarr;</a>
+            </div>
+
+        </section>
+
+        <script async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7876432493491415"
+            crossorigin="anonymous"></script>
+        <!-- FmrlToolsAllPgTopResnsv -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7876432493491415"
+            data-ad-slot="7246941950" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+
+        <section id="features" class="features">
+            <h2 class="section-title" style="margin-top: 0;">Why Choose Famral SEO Tools?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>100% Free Forever</h3>
+                    <p>All SEO generators and utilities are completely free with unlimited usage, zero subscriptions,
+                        and no sign-up required.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Client-Side Privacy</h3>
+                    <p>All meta tags, structured data, and code formatting process locally in your browser. Your URLs
+                        and draft content never touch our servers.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Google &amp; Schema.org Compliant</h3>
+                    <p>Built strictly following Google Search Central guidelines, Schema.org standards, and the Open
+                        Graph protocol for guaranteed compatibility.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Live Interactive Previews</h3>
+                    <p>Preview desktop &amp; mobile Google SERP snippets and social media cards on Facebook, Twitter,
+                        LinkedIn, and Discord in real time.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h4>What are SEO tools and why do I need them?</h4>
+                <p>SEO (Search Engine Optimization) tools help webmasters, developers, and marketers optimize their
+                    websites to rank higher on search engines like Google and Bing. They ensure your pages have proper
+                    meta tags, schema markup for rich results, optimized URLs, and fast loading assets.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Are all SEO tools on Famral free?</h4>
+                <p>Yes, 100% free! Every tool in our SEO suite can be used without any payment, credits, or
+                    registration. You can generate unlimited Schema markup, Open Graph tags, and meta tags.</p>
+            </div>
+            <div class="faq-item">
+                <h4>What is the difference between Meta Tags and Open Graph Tags?</h4>
+                <p>Standard meta tags (title, description, robots) are used primarily by search engines like Google to
+                    display your search snippet. Open Graph tags (og:title, og:image, og:description) are used by social
+                    platforms like Facebook, LinkedIn, Discord, and WhatsApp to render rich preview cards when your link
+                    is shared.</p>
+            </div>
+            <div class="faq-item">
+                <h4>How does Schema.org JSON-LD help my website?</h4>
+                <p>Schema.org structured data in JSON-LD format tells search engines precisely what your content is
+                    about (e.g., a Recipe with cook time and ratings, an FAQ, a Product with pricing, or a Local
+                    Business). Valid structured data makes your site eligible for eye-catching Google Rich Results,
+                    significantly boosting organic click-through rates (CTR).</p>
+            </div>
+            <div class="faq-item">
+                <h4>Is my website data secure when using Famral SEO Tools?</h4>
+                <p>Yes. All generation, validation, and encoding happens entirely client-side inside your web browser
+                    using modern JavaScript. No proprietary draft content or private URLs are ever uploaded, saved, or
+                    logged on our servers.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="siteFooter"></footer>
+
+    <!-- Common JS -->
+    <script src="/common.js"></script>
+</body>
+
+</html>

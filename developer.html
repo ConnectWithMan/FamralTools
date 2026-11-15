@@ -1,4 +1,4 @@
-﻿
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -40,9 +40,18 @@
             --border: #e2e8f0;
             --border: #cbd5e1;
         }
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        html, body {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
         body {
             font-family: system-ui, -apple-system, sans-serif;
             margin: 0;
+            padding: 0;
             background: var(--bg);
             color: var(--text);
             line-height: 1.6;
@@ -87,30 +96,63 @@
         }
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 2rem auto 5rem;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 1rem;
+            max-width: 1260px;
+            width: 100%;
+            margin: 2rem auto 4rem;
             padding: 0 1.5rem;
         }
         .card {
             background: var(--surface);
-            padding: 2rem;
-            border-radius: 1rem;
-            border: 1px solid var(--border);
-            border-radius: 0;
+            padding: 1.1rem 1rem;
             border: 2px solid var(--border);
-            transition: transform 0.2s, box-shadow 0.2s;
+            border-radius: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
         }
         .card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-            transform: translate(-4px, -4px);
-            box-shadow: 6px 6px 0 var(--primary);
+            transform: translate(-3px, -3px);
+            box-shadow: 4px 4px 0 var(--primary);
             border-color: var(--primary);
         }
-        .card h3 { margin-top: 0; color: var(--text); font-size: 1.25rem; }
-        .card p { color: var(--secondary); margin-bottom: 0; }
+        .card h3 {
+            margin: 0 0 0.35rem;
+            color: var(--text);
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        .card p {
+            color: var(--secondary);
+            font-size: 0.815rem;
+            line-height: 1.4;
+            margin: 0 0 0.75rem;
+            flex-grow: 1;
+        }
+        .card a {
+            display: inline-flex !important;
+            align-items: center;
+            gap: 0.35rem;
+            margin-top: auto !important;
+            color: var(--primary) !important;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.825rem !important;
+            transition: gap 0.2s ease;
+        }
+        .card a::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+        }
+        .card a:hover {
+            text-decoration: underline;
+            gap: 0.5rem;
+        }
         .section-title {
             text-align: center;
             font-size: 2rem;
@@ -127,8 +169,10 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
-            max-width: 1200px;
+            max-width: 1260px;
+            width: 100%;
             margin: 0 auto;
+            padding: 0 1.5rem;
             text-align: center;
         }
         .feature-item h3 { color: var(--primary); }
@@ -145,6 +189,12 @@
         }
         .faq-item h4 { margin: 0 0 0.5rem; font-size: 1.1rem; }
         .faq-item p { margin: 0; color: var(--secondary); }
+        @media (max-width: 1023px) {
+            .grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                gap: 0.85rem;
+            }
+        }
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2.5rem;
@@ -152,9 +202,30 @@
             .hero {
                 padding: 3rem 1rem;
             }
+        }
+        @media (max-width: 640px) {
+            .hero h1 {
+                font-size: 2.1rem;
+            }
+            .grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 0.65rem;
+                padding: 0 0.75rem;
+            }
+            .card {
+                padding: 0.85rem 0.75rem;
+            }
+            .card h3 {
+                font-size: 0.925rem;
+            }
+            .card p {
+                font-size: 0.775rem;
+                margin-bottom: 0.5rem;
+            }
+        }
+        @media (max-width: 360px) {
             .grid {
                 grid-template-columns: 1fr;
-                padding: 0 1rem;
             }
         }
         @keyframes slideDown {
@@ -301,6 +372,21 @@
                 <h3>CSS Gradient Generator</h3>
                 <p>Create custom CSS gradients with a visual editor.</p>
                 <a href="/css-gradient-generator" style="display: inline-block; margin-top: 1rem; color: var(--primary); text-decoration: none; font-weight: 600;">Open Tool &rarr;</a>
+            </div>
+            <div class="card">
+                <h3>Open Graph Generator</h3>
+                <p>Generate Open Graph and Twitter Card meta tags with live social previews.</p>
+                <a href="/open-graph-generator" style="display: inline-block; margin-top: 1rem; color: var(--primary); text-decoration: none; font-weight: 600;">Open Tool &rarr;</a>
+            </div>
+            <div class="card">
+                <h3>Meta Tag Generator</h3>
+                <p>Generate SEO meta tags with live Google SERP preview and robots directives.</p>
+                <a href="/meta-tag-generator" style="display: inline-block; margin-top: 1rem; color: var(--primary); text-decoration: none; font-weight: 600;">Open Tool &rarr;</a>
+            </div>
+            <div class="card">
+                <h3>Schema Markup Generator</h3>
+                <p>Generate valid Schema.org JSON-LD structured data for Google Rich Results.</p>
+                <a href="/schema-markup-generator" style="display: inline-block; margin-top: 1rem; color: var(--primary); text-decoration: none; font-weight: 600;">Open Tool &rarr;</a>
             </div>
             <div class="card">
                 <h3>HTML Viewer</h3>

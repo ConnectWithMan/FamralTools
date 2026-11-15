@@ -22,7 +22,7 @@
     <meta property="og:title" content="Free Meta Tag Generator &amp; Live Google SERP Preview Tool | Famral" />
     <meta property="og:description"
         content="Generate optimized SEO title, description, robots directives, Open Graph and Twitter Cards with real-time Google SERP preview. 100% free with 1-click code export." />
-    <meta property="og:image" content="https://tools.famral.com/tools.png" />
+    <meta property="og:image" content="https://www.famral.com/image/tools.webp" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Famral Meta Tag Generator and Google SERP Simulator Tool" />
@@ -35,7 +35,7 @@
     <meta name="twitter:title" content="Free Meta Tag Generator &amp; Live Google SERP Preview Tool | Famral" />
     <meta name="twitter:description"
         content="Craft high-converting SEO meta tags with instant Google desktop &amp; mobile SERP preview, Open Graph tags, and robots indexing directives." />
-    <meta name="twitter:image" content="https://tools.famral.com/tools.png" />
+    <meta name="twitter:image" content="https://www.famral.com/image/tools.webp" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon.ico" />
@@ -55,19 +55,18 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7876432493491415"
         crossorigin="anonymous"></script>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://tools.googletagmanager.com/gtag/js?id=G-22NPRLMEYS"></script>
+    <!-- Google Analytics (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H57NCR0QYN"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
-        gtag('config', 'G-22NPRLMEYS');
+        gtag('config', 'G-H57NCR0QYN');
     </script>
-
 
     <!-- Structured Data: WebApplication -->
     <script type="application/ld+json">
@@ -81,7 +80,7 @@
         "operatingSystem": "All",
         "browserRequirements": "Requires JavaScript. Requires HTML5.",
         "description": "Free SEO Meta Tag Generator and Google SERP Simulator to create, test, and copy optimized title tags, meta descriptions, robots indexing directives, and social metadata.",
-        "image": "https://tools.famral.com/image/tools.png",
+        "image": "https://www.famral.com/image/tools.webp",
         "offers": {
             "@type": "Offer",
             "price": "0",
@@ -98,15 +97,15 @@
         "author": {
             "@type": "Organization",
             "name": "Famral",
-            "url": "https://tools.famral.com"
+            "url": "https://www.famral.com"
         },
         "publisher": {
             "@type": "Organization",
             "name": "Famral",
-            "url": "https://tools.famral.com",
+            "url": "https://www.famral.com",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://tools.famral.com/favicon.ico"
+                "url": "https://www.famral.com/favicon.png"
             }
         }
     }
@@ -119,7 +118,7 @@
         "@type": "HowTo",
         "name": "How to Generate and Optimize SEO Meta Tags with Google SERP Simulator",
         "description": "Step-by-step guide to creating, testing, and copying optimized title tags, meta descriptions, robots indexing directives, and social metadata.",
-        "image": "https://tools.famral.com/image/tools.webp",
+        "image": "https://www.famral.com/image/tools.webp",
         "totalTime": "PT2M",
         "step": [
             {
@@ -160,7 +159,7 @@
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://tools.famral.com/"
+                "item": "https://www.famral.com/"
             },
             {
                 "@type": "ListItem",
@@ -229,7 +228,7 @@
                 "name": "What is a canonical URL tag and why should I include it?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "A canonical tag (<link rel='canonical' href='...'>) specifies the master, authoritative URL of a webpage when duplicate or very similar content is accessible through multiple URLs (e.g., HTTP vs HTTPS, tools vs non-tools, or tracking parameters). It consolidates ranking signals and prevents duplicate content penalties in Google."
+                    "text": "A canonical tag (<link rel='canonical' href='...'>) specifies the master, authoritative URL of a webpage when duplicate or very similar content is accessible through multiple URLs (e.g., HTTP vs HTTPS, www vs non-www, or tracking parameters). It consolidates ranking signals and prevents duplicate content penalties in Google."
                 }
             },
             {
@@ -1412,6 +1411,8 @@
             position: relative;
             max-height: 440px;
             overflow-y: auto;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
             background: #090d16;
             scrollbar-width: thin;
         }
@@ -2033,23 +2034,35 @@
                 gap: 2rem;
             }
 
+            .preview-column {
+                position: static;
+                top: auto;
+            }
+
             .tool-hero h1 {
-                font-size: 2.1rem;
+                font-size: clamp(1.6rem, 5vw, 2.1rem);
             }
         }
 
         @media (max-width: 768px) {
             .tool-hero {
-                padding: 1.75rem 0 2.25rem;
+                padding: 1.5rem 0 2rem;
             }
 
             .tool-hero h1 {
-                font-size: 1.75rem;
+                font-size: clamp(1.45rem, 4.5vw, 1.85rem);
             }
 
             .tool-hero-lead {
-                font-size: 0.98rem;
-                margin-bottom: 1.35rem;
+                font-size: 0.95rem;
+                margin-bottom: 1.25rem;
+            }
+
+            .form-input,
+            .form-textarea,
+            .form-select {
+                font-size: 16px;
+                /* Prevents auto-zoom on iOS Safari */
             }
 
             .form-card,
@@ -2061,6 +2074,37 @@
             .form-row-3,
             .directives-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .preview-tabs {
+                display: flex;
+                gap: 0.35rem;
+                overflow-x: auto;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
+                width: 100%;
+                max-width: 100%;
+                flex-wrap: nowrap;
+            }
+
+            .preview-tabs::-webkit-scrollbar {
+                display: none;
+            }
+
+            .preview-tabs .tab-btn {
+                flex-shrink: 0;
+            }
+
+            .code-content-wrapper {
+                max-height: 340px;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .code-pre {
+                font-size: 0.78rem;
+                padding: 0.85rem 1rem;
             }
 
             .infobox-image-guide {
@@ -2075,11 +2119,11 @@
             }
 
             .content-section {
-                padding: 3rem 0;
+                padding: 2.5rem 0;
             }
 
             .section-title {
-                font-size: 1.7rem;
+                font-size: 1.6rem;
             }
 
             .toast-notify {
@@ -2114,17 +2158,36 @@
                 padding: 0.5rem 0.7rem;
                 font-size: 0.82rem;
             }
+
+            .code-header {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0.5rem;
+            }
+
+            .code-actions {
+                display: flex;
+                width: 100%;
+                gap: 0.5rem;
+            }
+
+            .btn-code-action {
+                flex: 1;
+                justify-content: center;
+                font-size: 0.78rem;
+            }
         }
     </style>
 </head>
 
 <body>
+    <header id="siteHeader"></header>
     <!-- Global Shared Navbar injected by common.js -->
     <div id="navbar-placeholder"></div>
 
     <main>
         <!-- Hero Section with Schema.org Breadcrumb -->
-        <header class="tool-hero">
+        <section class="tool-hero">
             <div class="page-container">
                 <!-- Breadcrumb -->
                 <nav class="hero-breadcrumb" aria-label="Breadcrumb">
@@ -2169,7 +2232,7 @@
                     </button>
                 </div>
             </div>
-        </header>
+        </section>
 
         <!-- Interactive Workspace Section -->
         <section class="workspace-section" aria-label="Meta Tag Generator Workspace">
@@ -2256,8 +2319,8 @@
                                             </label>
                                         </div>
                                         <input type="url" id="input-canonical" class="form-input"
-                                            placeholder="https://tools.example.com/page"
-                                            value="https://tools.famral.com/college-predictor" />
+                                            placeholder="https://www.example.com/page"
+                                            value="https://www.famral.com/college-predictor" />
                                         <div class="form-hint">Consolidates duplicate URLs.</div>
                                     </div>
 
@@ -2430,8 +2493,8 @@
                                             px</span>
                                     </div>
                                     <input type="url" id="input-og-image" class="form-input"
-                                        placeholder="https://tools.example.com/images/share.jpg"
-                                        value="https://tools.famral.com/image/tools.webp" />
+                                        placeholder="https://www.example.com/images/share.jpg"
+                                        value="https://www.famral.com/image/tools.webp" />
                                     <div class="form-hint">
                                         High-resolution 1.91:1 banner for Facebook, X, LinkedIn, Discord &amp; WhatsApp.
                                     </div>
@@ -2640,12 +2703,12 @@
                                 <div class="google-serp-desktop" id="serp-desktop-view">
                                     <div class="serp-url-row">
                                         <div class="serp-favicon">
-                                            <img src="/favicon.png" alt="Favicon"
-                                                onerror="this.src='https://tools.google.com/favicon.ico'" />
+                                            <img src="/favicon.ico" alt="Favicon"
+                                                onerror="this.src='https://www.google.com/favicon.ico'" />
                                         </div>
                                         <div style="display:flex; flex-direction:column; min-width:0;">
                                             <span class="serp-site-name" id="serp-site-desktop">Famral</span>
-                                            <span class="serp-breadcrumb" id="serp-url-desktop">https://tools.famral.com ›
+                                            <span class="serp-breadcrumb" id="serp-url-desktop">https://www.famral.com ›
                                                 college-predictor</span>
                                         </div>
                                     </div>
@@ -2660,7 +2723,7 @@
                                 <div class="google-serp-mobile" id="serp-mobile-view">
                                     <div class="serp-mobile-header">
                                         <div class="serp-mobile-favicon">
-                                            <img src="/favicon.png" alt="Favicon"
+                                            <img src="/favicon.ico" alt="Favicon"
                                                 style="width:100%; height:100%; object-fit:cover;" />
                                         </div>
                                         <div style="min-width:0; overflow:hidden;">
@@ -2675,7 +2738,7 @@
                                         <div class="serp-mobile-snippet" id="serp-snippet-mobile">Estimate your college
                                             admission chances, expected ranks, and percentiles for JEE Main, CUET, MHT
                                             CET, COMEDK, REAP, MP DTE &amp; 40+ counselling processes.</div>
-                                        <img src="https://tools.famral.com/image/tools.webp" class="serp-mobile-thumb"
+                                        <img src="https://www.famral.com/image/tools.webp" class="serp-mobile-thumb"
                                             id="serp-thumb-mobile" alt="Thumbnail" />
                                     </div>
                                 </div>
@@ -2685,7 +2748,7 @@
                             <div id="preview-facebook" class="preview-pane" style="display:none;">
                                 <div class="social-card">
                                     <div class="preview-img-container">
-                                        <img src="https://tools.famral.com/image/tools.webp" id="fb-preview-img"
+                                        <img src="https://www.famral.com/image/tools.webp" id="fb-preview-img"
                                             alt="Social Share Banner" />
                                     </div>
                                     <div class="fb-content">
@@ -2703,7 +2766,7 @@
                             <div id="preview-twitter" class="preview-pane" style="display:none;">
                                 <div class="social-card tw-card">
                                     <div class="preview-img-container">
-                                        <img src="https://tools.famral.com/image/tools.webp" id="tw-preview-img"
+                                        <img src="https://www.famral.com/image/tools.webp" id="tw-preview-img"
                                             alt="Social Share Banner" />
                                     </div>
                                     <div class="tw-content">
@@ -2944,7 +3007,7 @@
                     <div class="aspect-ratio-diagram">
                         <div class="diagram-screen">
                             <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.35rem;">
-                                <img src="https://tools.google.com/s2/favicons?domain=famral.com&amp;sz=32" alt="Favicon"
+                                <img src="https://www.google.com/s2/favicons?domain=famral.com&amp;sz=32" alt="Favicon"
                                     style="width:16px; height:16px; border-radius:50%;" />
                                 <span style="font-size:0.75rem; color:#202124; font-weight:500;">Famral &rsaquo; seo
                                     &rsaquo; meta-tag-generator</span>
@@ -3180,7 +3243,7 @@
                             A canonical tag (<code>&lt;link rel="canonical" href="..."&gt;</code>) specifies the master,
                             authoritative URL of a webpage when duplicate or very similar content is accessible through
                             multiple
-                            URLs (e.g., HTTP vs HTTPS, tools vs non-tools, or tracking parameters). It consolidates ranking
+                            URLs (e.g., HTTP vs HTTPS, www vs non-www, or tracking parameters). It consolidates ranking
                             signals
                             and prevents duplicate content penalties in Google.
                         </div>
@@ -3224,14 +3287,15 @@
                             <h3 style="font-size: 1.3rem; font-weight: 800; color: #0f172a; margin-bottom: 0.4rem;"><i
                                     class="fas fa-cubes" style="color: #0067b8; margin-right: 0.4rem;"></i> Need
                                 Google Rich Snippets &amp; Structured Data?</h3>
-                            <p style="color: #334155; margin: 0; font-size: 0.95rem;">Generate Schema.org JSON-LD structured data and specialized social previews with our suite of free SEO tools.</p>
+                            <p style="color: #334155; margin: 0; font-size: 0.95rem;">Generate Schema.org JSON-LD
+                                structured data and specialized social previews with our suite of free SEO tools.</p>
                         </div>
                         <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
-                            <a href="/seo/schema-markup-generator" class="btn-pill btn-pill-primary"
+                            <a href="/schema-markup-generator" class="btn-pill btn-pill-primary"
                                 style="display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.65rem 1.25rem; font-size: 0.875rem; font-weight: 600; border-radius: 9999px; background: #0067b8; color: #ffffff; text-decoration: none; border: 1px solid #0067b8;">
                                 <i class="fas fa-cubes"></i> Schema Markup Generator &rarr;
                             </a>
-                            <a href="/seo/open-graph-generator" class="btn-pill"
+                            <a href="/open-graph-generator" class="btn-pill"
                                 style="display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.65rem 1.25rem; font-size: 0.875rem; font-weight: 600; border-radius: 9999px; background: #ffffff; color: #0067b8; text-decoration: none; border: 1px solid #0067b8;">
                                 Open Graph Generator &rarr;
                             </a>
@@ -3250,6 +3314,7 @@
         <span id="toast-text">Meta tags copied to clipboard!</span>
     </div>
 
+    <footer id="siteFooter"></footer>
     <!-- Global Shared Footer injected by common.js -->
     <div id="footer-placeholder"></div>
 
@@ -3522,7 +3587,7 @@
             function getCleanDomain(urlString) {
                 try {
                     const parsed = new URL(urlString);
-                    return parsed.hostname.replace(/^tools\./, '');
+                    return parsed.hostname.replace(/^www\./, '');
                 } catch (e) {
                     return 'example.com';
                 }
@@ -3532,7 +3597,7 @@
             function updateAll() {
                 const titleVal = inputTitle.value.trim() || 'Your Compelling Page Title Here';
                 const descVal = inputDesc.value.trim() || 'A clear, descriptive summary of your web page content for social feeds and search engine snippets.';
-                const canonicalVal = inputCanonical.value.trim() || 'https://tools.example.com/page';
+                const canonicalVal = inputCanonical.value.trim() || 'https://www.example.com/page';
                 const authorVal = inputAuthor.value.trim();
                 const keywordsVal = inputKeywords.value.trim();
                 const charsetVal = selectCharset.value;
@@ -3590,7 +3655,7 @@
                 serpUrlMobile.textContent = domain;
                 serpTitleMobile.textContent = titleVal;
                 serpSnippetMobile.textContent = descVal;
-                const ogImgVal = inputOgImage.value.trim() || 'https://tools.famral.com/image/tools.webp';
+                const ogImgVal = inputOgImage.value.trim() || 'https://www.famral.com/image/tools.webp';
                 serpThumbMobile.src = ogImgVal;
 
                 // 5. Update Facebook & Twitter Previews
@@ -3820,7 +3885,7 @@
             btnLoadDemo.addEventListener('click', () => {
                 inputTitle.value = 'Free College, Rank & Percentile Predictor 2026 | Famral';
                 inputDesc.value = 'Estimate your college admission chances, expected ranks, and percentiles for JEE Main, CUET, MHT CET, COMEDK, REAP, MP DTE & 40+ counselling processes.';
-                inputCanonical.value = 'https://tools.famral.com/college-predictor';
+                inputCanonical.value = 'https://www.famral.com/college-predictor';
                 inputAuthor.value = 'Famral';
                 inputKeywords.value = 'college predictor, rank predictor, jee main, cuet, mht cet';
                 selectCharset.value = 'UTF-8';
@@ -3844,7 +3909,7 @@
                 selectRating.value = 'general';
 
                 includeSocial.checked = true;
-                inputOgImage.value = 'https://tools.famral.com/image/tools.webp';
+                inputOgImage.value = 'https://www.famral.com/image/tools.webp';
                 selectOgType.value = 'website';
                 inputSiteName.value = 'Famral';
                 selectTwitterCard.value = 'summary_large_image';

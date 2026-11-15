@@ -34,8 +34,8 @@ function injectStyles() {
             --surface-color: #f8fafc;
         }
 
-        header,
-        header#siteHeader {
+        header#siteHeader,
+        header.site-header {
             position: sticky !important;
             top: 0 !important;
             z-index: 1000 !important;
@@ -321,8 +321,8 @@ function injectStyles() {
 
         /* Mobile & Small Screen Breakpoints */
         @media (max-width: 768px) {
-            header,
-            header#siteHeader {
+            header#siteHeader,
+            header.site-header {
                 padding: 0 !important;
                 margin: 0 !important;
                 display: block !important;
@@ -332,7 +332,7 @@ function injectStyles() {
                 z-index: 1000 !important;
             }
 
-            nav,
+            header#siteHeader nav.navbar,
             nav.navbar,
             .navbar {
                 position: relative !important;
@@ -374,6 +374,11 @@ function injectStyles() {
                 cursor: pointer !important;
                 color: var(--text-dark, #111827) !important;
                 visibility: visible !important;
+            }
+
+            .nav-toggle svg,
+            .nav-toggle svg * {
+                pointer-events: none !important;
             }
 
             .nav-links-wrapper {
@@ -483,6 +488,7 @@ function renderHeader() {
                 <div class="nav-links-wrapper" id="navLinks">
                     <a href="/" class="nav-link">Home</a>
                     <a href="/developer" class="nav-link">Developer Tools</a>
+                    <a href="/seo" class="nav-link">SEO Tools</a>
                     <a href="/image" class="nav-link">Image Tools</a>
                     <a href="/academic" class="nav-link">Academic Tools</a>
                     <a href="/pdf" class="nav-link">PDF Tools</a>
@@ -578,8 +584,12 @@ function toggleMobileNav(e) {
         e.preventDefault();
     }
     const navLinks = document.getElementById('navLinks');
+    const navToggle = document.getElementById('navToggle');
     if (navLinks) {
-        navLinks.classList.toggle('active');
+        const isActive = navLinks.classList.toggle('active');
+        if (navToggle) {
+            navToggle.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+        }
     }
 }
 
@@ -602,6 +612,7 @@ document.addEventListener('click', (e) => {
     const navToggle = document.getElementById('navToggle');
     if (navLinks && navToggle && !navLinks.contains(e.target) && !navToggle.contains(e.target)) {
         navLinks.classList.remove('active');
+        navToggle.setAttribute('aria-expanded', 'false');
     }
     document.querySelectorAll('.dropdown').forEach(d => {
         if (!d.contains(e.target)) {
