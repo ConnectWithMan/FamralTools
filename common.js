@@ -538,12 +538,13 @@ function renderFooter() {
 
                 <!-- Column 3: Quick Links -->
                 <div class="footer-column">
-                    <h4>Quick Links</h4>
+                    <h4>Popular Tools</h4>
                     <ul>
-                        <li><a href="/rtu-sgpa-calculator">B.Tech Syllabus Guide</a></li>
-                        <li><a href="/rtu-cgpa-calculator">CGPA to Percentage Formula</a></li>
-                        <li><a href="/skit-sgpa-calculator#marks-converter">Marks to Grade Converter</a></li>
-                        <li><a href="/">Semester Credit Matrix</a></li>
+                        <li><a href="/signature-generator">Signature Generator</a></li>
+                        <li><a href="/photo-editor">Online Photo Editor</a></li>
+                        <li><a href="/png-to-svg">PNG to SVG Converter</a></li>
+                        <li><a href="/base64-to-image">Base64 to Image</a></li>
+                        <li><a href="/image-converter">Free Image Converter</a></li>
                     </ul>
                 </div>
 
